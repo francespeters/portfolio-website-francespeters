@@ -1,16 +1,11 @@
-
-export default function RotatedTextBlock({ text }: { text: string }) {
+export default function RotatedTextBlock({ text, width = "w-160" }: { text: string, width?: string }) {
   return (
-    <div className="relative w-64 h-64">
+    <div className={`relative ${width} h-fit`}>
       <div
-        className="absolute top-1/2 display left-1/2 text-center text-xl font-bold"
-        style={{ transform: "translate(-50%, -50%) rotate(-15deg)" }}
-      >
-        <p>
-            {text}
-        </p>
-        
+        className="absolute left-1/2 w-full text-xl font-bold"
+        style={{ transform: "translate(-50%, -50%) rotate(-4.5deg)" }}>
+        <p className="text-white font-medium text-[40px] leading-normal" style={{ fontFamily: '"Labil Grotesk"' }}>{text}</p>
       </div>
     </div>
   );
-}   
+}

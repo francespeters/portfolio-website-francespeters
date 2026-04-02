@@ -28,3 +28,82 @@ body {
 Link{
   text-decoration: none;
 }
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Full light shell when viewing a project (/projects/...) */
+html.project-route {
+  color-scheme: light;
+}
+
+html.project-route body {
+  background-color: #ffffff !important;
+  color: #171717;
+}
+
+.extend-full{
+  width:900;
+
+}
+
+.extend-half{
+  width: 500;
+}
+
+
+
+.row {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.row img {
+  flex-shrink: 0;
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+}
+
+.stack {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+
+
+.bubble {
+  border-radius: 1rem;
+  padding: 0.75rem 1.25rem;
+  display: inline-block;
+  font-size: 0.875rem;
+  line-height: 1.5;
+
+}
+
+
+
+.bubble h3 {
+  color: black;
+  font-family: "Helvetica Neue";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%; /* 15.4px */
+  letter-spacing: -0.11px;
+}
+
+.bubble p {
+  color: #000;
+  font-family: "Helvetica Neue";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%; /* 15.4px */
+  letter-spacing: -0.11px;
+}

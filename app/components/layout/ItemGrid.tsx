@@ -1,3 +1,4 @@
+import ItemTag from "../ui/ItemTag";
 
 type ItemType = "bowl" | "mug" | "plate" | "decor";
 
@@ -47,6 +48,8 @@ export default function ItemGrid() {
               
                 
                 </div>
+                <ItemTag text="UX Research | UX Design" date="2024" />
+
             </div>
         </div>
     );
