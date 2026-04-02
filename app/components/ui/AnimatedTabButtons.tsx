@@ -30,25 +30,25 @@ export default function AnimatedTabButtons({ className = "" }: AnimatedTabButton
     `translate(-50%, -50%) rotate(${angleDeg}deg) translate(${radiusPx}px) rotate(${-angleDeg}deg) scale(${isActive ? activeScale : 1})`;
 
   const tabBase =
-    "h-16 w-16 sm:h-20 sm:w-20 cursor-pointer rounded-full border border-gray-300 flex items-center justify-center text-decoration-none text-center text-xs sm:text-sm font-semibold leading-tight select-none";
-  const tabInactive = "bg-white text-black hover:bg-black";
-  const tabActive = "bg-black text-white shadow-lg";
+    "h-16 w-16 sm:h-20 sm:w-20 cursor-pointer rounded-full  flex items-center justify-center text-decoration-none text-center text-xs sm:text-sm font-semibold leading-tight select-none";
+  const tabInactive = "bg-[#2C2C2C] text-white hover:bg-black translate-y-4";
+  const tabActive = "bg-white text-black shadow-lg " ;
 
-  const handleTabClick = (event: MouseEvent<HTMLAnchorElement>, targetPath: "/home" | "/about") => {
-    event.stopPropagation(); // add this
-    if (activePath === targetPath) {
-      event.preventDefault();
-      return;
-    }
+  // const handleTabClick = (event: MouseEvent<HTMLAnchorElement>, targetPath: "/home" | "/about") => {
+  //   event.stopPropagation(); // add this
+  //   if (activePath === targetPath) {
+  //     event.preventDefault();
+  //     return;
+  //   }
 
-    event.preventDefault();
-    setPendingPath(targetPath);
-    router.push(targetPath);
+  //   event.preventDefault();
+  //   setPendingPath(targetPath);
+  //   router.push(targetPath);
 
-    window.setTimeout(() => {
-      setPendingPath(null);
-    }, animationMs);
-  };
+  //   window.setTimeout(() => {
+  //     setPendingPath(null);
+  //   }, animationMs);
+  // };
 
   return (
     <nav aria-label="Primary" className={`relative ${className}`}>
