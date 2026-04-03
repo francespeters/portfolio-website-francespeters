@@ -1,16 +1,34 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --black-primary: #1d1d1d;
+  --white-primary: #ffffff;
+  --grey-primary: #2c2c2c;
 }
 
+/*
+ * Tailwind v4 + @theme inline: maps to bg-*, text-*, border-*, etc.
+ *
+ * Avoid names like text-white-primary / text-black-primary — they clash with
+ * built-in `white` and `black` scales, so those utilities may not generate.
+ * Use brand-* (or arbitrary text-[color:var(--white-primary)]).
+ */
 @theme inline {
+  --color-brand-ink: var(--black-primary);
+  --color-brand-paper: var(--white-primary);
+  --color-brand-surface: var(--grey-primary);
+  /* Aliases if you need longer names elsewhere */
+  --color-black-primary: var(--black-primary);
+  --color-white-primary: var(--white-primary);
+  --color-grey-primary: var(--grey-primary);
+}
+
+/* @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-}
+} */
 
 @media (prefers-color-scheme: dark) {
   :root {
@@ -20,12 +38,13 @@
 }
 
 body {
-  background: black;
+  background: var(--black-primary);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
 
-Link{
+/* Next <Link> → <a>. Bootstrap underlines links; keep header nav clean. */
+header a {
   text-decoration: none;
 }
 
@@ -100,10 +119,38 @@ body {
 }
 
 h1{
-  color: #000;
+  color: white;
   font-family: "Helvetica Neue";
   font-weight: 400;
   letter-spacing: -0.11px;
 
+}
 
+.title-hero{
+  color: #FFF;
+  font-family: "Labil Grotesk";
+  font-size: 67px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+
+}
+
+.subtitle-hero{
+  color: #FFF;
+  font-family: "Labil Grotesk";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.type-hero{
+  color: #FFF;
+  font-family: "Labil Grotesk";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: uppercase;
 }

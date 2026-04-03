@@ -2,7 +2,9 @@
     {
     "id": "course-connect",
     "title": "Course Connect",
+    "subtitle": "Emotional Design for Student Belongingness",
     "href": "/projects/course-connect",
+    "type": "Case Study",
     "tagText": "UX Research | UX Design",
     "date": "2024",
     "aspect":"aspect-[4/3]",
@@ -10,7 +12,32 @@
     "hypothesis":"If Northeastern students can easily find classmates, join study groups, and message peers through a class-focused app, then they will form stronger in-class academic connections by reducing social barriers and facilitating collaboration.",
     "role":"I contributed to the entire design process, from research to high-fidelity prototypes, collaborating with teammates on ideation, usability testing, and interface design. I worked closely with the team to synthesize insights, iterate on concepts, and ensure the solution aligned with both user needs and functional requirements.",
     "img1": "/images/course1.png",
-    "cover":"/images/courseCover.png"
+    "cover":"/images/courseCoverImg.png",
+    "imageSrc": "/images/courseCoverImg.png",
+    "gifs": [
+      "/images/recpt1.gif",
+      "/images/recpt2.gif"
+    ],
+    "diagram": "/images/courseDiagram.png",
+    "research": [
+      "We conducted interviews with two Northeastern students to understand their experiences with belonging and peer interaction. Using this qualitative research, we developed two user personas, incorporating common pain points and user goals. ",
+      "We generated 15 ideas, then created two paper prototypes: CourseConnect (focused on in-class connections) and Meet n’ Eat (focused on shared activities). Usability testing on the prototypes allowed us to identify strengths and areas for improvement. ",
+      "Insights were organized using an affinity diagram, guiding iterative design of low- and high-fidelity digital prototypes. Design decisions were informed by usability heuristics for recognition, clear actions, and personalization, as well as non-functional requirements like learnability and error prevention."
+      ],
+    "quotes": [
+      "“It can be hard to put yourself out there… but trying to make connections by going to clubs or finding people in common classes or activities helps.”",
+      "“I guess proximity… you end up talking more and more and I just feel like the more you share and they share, the more connected you feel.”"
+    ],
+    "img2": "/images/course2.png",
+    "solution": "Our prototype, CourseConnect, allowed students to navigate courses, view classmate profiles, participate in forums, send messages, and join study groups. Personalization features and a familiarly structured interface allows for students to identify peers with shared interests and form connections. Usability testing confirmed that students could successfully engage with the app, join study groups, and message classmates, helping bridge the gap between classroom recognition and real interaction.",
+    "challenges":[
+      "Certain icons (ex. study group book icon) initially caused confusion → we added labels under icons.",
+      "Early ideation initially focused too much on campus-based activities, limiting creative exploration.",
+      "Usability testing emphasized feature functionality over emotional experience."
+    ],
+    "impact": "Course Connect provided a structured, personalized way for students to connect with classmates, making it easier to form study groups and friendships while also offering a centralized class chat platform. By reducing social friction, CourseConnect aims to help increase student engagement and support a stronger sense of belonging on campus.",
+    "takeaways": "I learned the importance of designing for emotional experience, not just usability and aesthetics, particularly when addressing social connection. Iterative testing, clear heuristics, and personalization were critical in creating interfaces that were both effective and engaging, while respecting user privacy and preferences."
+
   },
   {
     "id": "petrichor",

@@ -15,7 +15,7 @@ export default function PortfolioGrid({
   className = "",
 }: PortfolioGridProps) {
   return (
-    <ul className={`columns-1 gap-4 p-0 sm:columns-2 ${className} list-none`}>
+    <ul className={`columns-1 gap-4 p-0 sm:columns-2 ${className} list-none `}>
       {projects.map((project) => {
         const imageAlt =
           "imageAlt" in project && typeof project.imageAlt === "string"
@@ -26,10 +26,10 @@ export default function PortfolioGrid({
         <li key={project.id} className="mb-4 break-inside-avoid">
           <Link
             href={project.href}
-            className="group block overflow-hidden rounded-sm border border-neutral-200 bg-neutral-100 text-inherit shadow-sm transition-[box-shadow,transform] hover:-translate-y-0.5 hover:shadow-md dark:border-neutral-800 dark:bg-neutral-900"
+            className="group block overflow-hidden rounded-sm  border-neutral-200 bg-brand-surface text-inherit shadow-sm transition-[box-shadow,transform] hover:-translate-y-0.5 hover:shadow-md "
           >
             <div
-              className={`relative w-full bg-neutral-200 dark:bg-neutral-800 ${"aspect" in project && project.aspect ? project.aspect : "aspect-[4/3]"}`}
+              className={`relative w-full ${"aspect" in project && project.aspect ? project.aspect : "aspect-[4/3]"}`}
             >
               {"imageSrc" in project && project.imageSrc ? (
                 String(project.imageSrc).startsWith("/") ? (
@@ -57,7 +57,7 @@ export default function PortfolioGrid({
 
             
           </Link>
-          <footer className="border-t border-neutral-200 bg-neutral-950 px-2 pt-3 dark:border-neutral-800">
+          <footer className="border-t border-neutral-200 bg-color-brand-surface px-2 pt-3 dark:border-neutral-800">
               <ItemTag text={project.tagText} date={project.date} />
             </footer>
         </li>
