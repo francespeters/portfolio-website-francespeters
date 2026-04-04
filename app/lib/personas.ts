@@ -13,7 +13,7 @@ export type UserPersonaRecord = {
   sortOrder?: number;
 } & Omit<UserPersonaProps, "className">;
 
-const rows = userPersonas as UserPersonaRecord[];
+const rows = userPersonas as unknown as UserPersonaRecord[];
 
 export function getPersonasForProject(projectId: string): UserPersonaRecord[] {
   return rows
@@ -25,7 +25,6 @@ export function getPersonasForProject(projectId: string): UserPersonaRecord[] {
 export function personaProps(record: UserPersonaRecord): UserPersonaProps {
   const {
     name,
-    role,
     summary,
     avatarSrc,
     avatarAlt,
@@ -38,7 +37,6 @@ export function personaProps(record: UserPersonaRecord): UserPersonaProps {
   } = record;
   return {
     name,
-    role,
     summary,
     avatarSrc,
     avatarAlt,

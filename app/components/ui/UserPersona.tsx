@@ -8,7 +8,6 @@ export type PersonaDemographic = {
 export type UserPersonaProps = {
   name: string;
   /** e.g. "Graduate student", "Primary persona" */
-  role: string;
   /** One line context for the case study */
   summary?: string;
   avatarSrc?: string;
@@ -87,7 +86,6 @@ function DemographicsBlock({
 
 export default function UserPersona({
   name,
-  role,
   summary,
   avatarSrc,
   avatarAlt,
@@ -136,9 +134,6 @@ export default function UserPersona({
 
             <div className="min-w-0 flex-1 text-center sm:text-left xl:min-w-0 xl:flex-1">
               <h2 className="text-xl font-bold tracking-tight sm:text-2xl">{name}</h2>
-              <p className="mt-1 text-sm font-medium text-neutral-600 dark:text-neutral-400">
-                {role}
-              </p>
               {summary ? (
                 <p className="mt-3 text-sm leading-relaxed text-neutral-700 dark:text-neutral-300">
                   {summary}
