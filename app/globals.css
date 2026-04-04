@@ -105,12 +105,14 @@ body {
 
 
 
-.bubble {
-  border-radius: 1rem;
-  padding: 0.75rem 1.25rem;
-  display: inline-block;
-  font-size: 0.875rem;
-  line-height: 1.5;
+.about-body-text{
+  color: #ffffff;
+  font-family: "Labil Grotesk";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 200;
+  line-height: 140%; /* 15.4px */
+  letter-spacing: -0.11px;
 
 }
 
@@ -180,3 +182,27 @@ h1{
   line-height: 140%; /* 15.4px */
   letter-spacing: -0.11px;
 }
+
+.label-large{
+  color: #FFF;
+  font-family: "Labil Grotesk";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+@keyframes fadeInUp {
+    0% {
+        transform: translateY(40px); /* Start slightly below */
+        opacity: 0; /* Start visible but faded */
+    }
+    80% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+  }
+  
+  .fadeInUp-animation {
+    animation: 1.3s fadeInUp both;
+  }

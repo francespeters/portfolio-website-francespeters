@@ -8,6 +8,8 @@ import ProjectMainCursorZone from "@/app/components/layout/ProjectMainCursorZone
 import ProjectPageHero from "@/app/components/layout/ProjectPageHero";
 import QuoteCard from "@/app/components/ui/QuoteCard";
 import BackToTop from "@/app/components/ui/BackToTopButton";
+import FadeIn from "@/app/components/ui/FadeIn";
+
 
 type Project = (typeof Projects)[number];
 
@@ -39,16 +41,19 @@ export default async function ProjectPage({
 
         <ProjectMainCursorZone hideThresholdPx={680}>
         <div className="mx-auto max-w-[1400px] px-10 py-6 md:px-20 md:py-10 lg:px-50 lg:py-16">
-            {"problem" in project && project.problem ? (
-                <div>
-                    <h3 className="heading-text">Problem</h3>
-                    <p className="mt-2 body-text">
-                    {project.problem}
-                    </p>
-                </div>
+            <FadeIn>
+                {"problem" in project && project.problem ? (
+                    <div>
+                        <h3 className="heading-text">Problem</h3>
+                        <p className="mt-2 body-text">
+                        {project.problem}
+                        </p>
+                    </div>
               ) : null}
+              </FadeIn>
                 <div className="mt-8 flex flex-col gap-8 md:flex-row md:items-start md:gap-10">
                     <div className="flex flex-col gap-6 md:w-[30vw] md:shrink-0">
+                        <FadeIn>
                         {"hypothesis" in project && project.hypothesis ? (
                         <div>
                             <h3 className="heading-text">Hypothesis</h3>
@@ -57,38 +62,43 @@ export default async function ProjectPage({
                             </p>
                         </div>
                         ) : null}
-                        {"role" in project && project.role ? (
-                        <div>
-                            <h3 className="heading-text">My Role</h3>
-                            <p className="mt-2 body-text">
-                            {project.role}
-                            </p>
-                        </div>
-                        ) : null}
+                        
+                            {"role" in project && project.role ? (
+                            <div>
+                                <h3 className="heading-text">My Role</h3>
+                                <p className="mt-2 body-text">
+                                {project.role}
+                                </p>
+                            </div>
+                            ) : null}
+                        </FadeIn>
                     </div>
 
-                    {img1 ? (
-                        <div className="min-w-0 flex-1">
-                        {img1.startsWith("/") ? (
-                            <Image
-                            src={img1}
-                            alt={`${project.title} — project image`}
-                            width={1200}
-                            height={800}
-                            draggable={false}
-                            className="h-auto w-full rounded-lg"
-                            />
-                        ) : (
-                            // eslint-disable-next-line @next/next/no-img-element
-                            <img
-                            src={img1}
-                            draggable={false}
-                            alt={`${project.title} — project image`}
-                            className="h-auto w-full rounded-lg"
-                            />
-                        )}
-                        </div>
-                    ) : null}
+                    <FadeIn>
+
+                        {img1 ? (
+                            <div className="min-w-0 flex-1">
+                            {img1.startsWith("/") ? (
+                                <Image
+                                src={img1}
+                                alt={`${project.title} — project image`}
+                                width={1200}
+                                height={800}
+                                draggable={false}
+                                className="h-auto w-full rounded-lg"
+                                />
+                            ) : (
+                                // eslint-disable-next-line @next/next/no-img-element
+                                <img
+                                src={img1}
+                                draggable={false}
+                                alt={`${project.title} — project image`}
+                                className="h-auto w-full rounded-lg"
+                                />
+                            )}
+                            </div>
+                        ) : null}
+                    </FadeIn>
                 </div>
 
             
@@ -108,7 +118,7 @@ export default async function ProjectPage({
                 ))}
             </section>
             ) : null} */}
-
+            <FadeIn>
             <div className="mt-8 flex flex-col gap-8 md:flex-row md:items-start md:gap-10">  
                 {"research" in project && project.research ? (
                     <div className="md:w-[30vw] md:shrink-0">
@@ -151,6 +161,8 @@ export default async function ProjectPage({
 
 
             </div>
+            </FadeIn>
+            <FadeIn>
             {project.diagram && (
                 <div className="mt-8 flex flex-wrap gap-6 justify-center">
                     {project.diagram && (
@@ -165,16 +177,19 @@ export default async function ProjectPage({
                     )}
                 </div>
             )}
+            </FadeIn>
+            <FadeIn>
+                {"solution" in project && project.solution ? (
+                    <div className="pt-8">
+                        <h3 className="heading-text">Solution</h3>
+                        <p className="mt-2 body-text">
+                        {project.solution}
+                        </p>
+                    </div>
+                ) : null}
+            </FadeIn>
 
-            {"solution" in project && project.solution ? (
-                <div className="pt-8">
-                    <h3 className="heading-text">Solution</h3>
-                    <p className="mt-2 body-text">
-                    {project.solution}
-                    </p>
-                </div>
-              ) : null}
-
+            <FadeIn>
             {"screensImg" in project && project.screensImg ? (
                 <div className="mt-8 flex flex-wrap gap-6 justify-center">
                     {project.screensImg && (
@@ -189,72 +204,76 @@ export default async function ProjectPage({
                     )}
                 </div>
             ):null}
+            </FadeIn>
             
-            {project.gifs && project.gifs.length > 0 ? (
-                <div className="mt-8 flex flex-wrap gap-6 justify-center">
-                    {project.gifs.map((gif, index) => (
-                    <div key={index} className="flex-1 min-w-[280px] max-w-[20vw] overflow-hidden rounded-lg">
-                    <img
-                        src={gif}
-                        draggable={false}
-                        alt={`${project.title} — project gif`}
-                        className="h-auto w-full scale-[1.02]"
-                    />
-                    </div>
-                    ))}
-                </div>
-            ) : null}
-
-            
-
-            <div className="mt-8 flex flex-col gap-8 md:flex-row md:items-end md:gap-10">
-                {project.img3 ? (
-                        <div className="min-w-0 flex-1">
-                        {project.img3.startsWith("/") ? (
-                            <Image
-                            src={project.img3}
-                            alt={`${project.title} — project image`}
-                            width={1200}
-                            height={800}
+            <FadeIn>
+                {project.gifs && project.gifs.length > 0 ? (
+                    <div className="mt-8 flex flex-wrap gap-6 justify-center">
+                        {project.gifs.map((gif, index) => (
+                        <div key={index} className="flex-1 min-w-[280px] max-w-[20vw] overflow-hidden rounded-lg">
+                        <img
+                            src={gif}
                             draggable={false}
-                            className="h-auto w-full rounded-lg"
-                            />
-                        ) : (
-                            // eslint-disable-next-line @next/next/no-img-element
-                            <img
-                            src={project.img3}
-                            draggable={false}
-                            alt={`${project.title} — project image`}
-                            className="h-auto w-full rounded-lg"
-                            />
-                        )}
+                            alt={`${project.title} — project gif`}
+                            className="h-auto w-full scale-[1.02]"
+                        />
                         </div>
-                ) : null}
-                <div className="flex flex-col gap-6 md:w-[30vw] md:shrink-0">
-                    {"challenges" in project && project.challenges ? (
-                    <div>
-                        <h3 className="heading-text">Challenges</h3>
-                        <ul className="mt-2 list-disc list-inside body-text">
-                        {project.challenges.map((challenge, index) => (
-                            <li key={index} className="body-text">{challenge}</li>
                         ))}
-                        </ul>
                     </div>
-                    ) : null}
+                ) : null}
+            </FadeIn>
 
-                    {"impact" in project && project.impact ? (
-                        <div>
-                            <h3 className="heading-text">Impact</h3>
-                            <p className="mt-2 body-text">
-                            {project.impact}
-                            </p>
-                        </div>
+            <FadeIn>
+                <div className="mt-8 flex flex-col gap-8 md:flex-row md:items-end md:gap-10">
+                    {project.img3 ? (
+                            <div className="min-w-0 flex-1">
+                            {project.img3.startsWith("/") ? (
+                                <Image
+                                src={project.img3}
+                                alt={`${project.title} — project image`}
+                                width={1200}
+                                height={800}
+                                draggable={false}
+                                className="h-auto w-full rounded-lg"
+                                />
+                            ) : (
+                                // eslint-disable-next-line @next/next/no-img-element
+                                <img
+                                src={project.img3}
+                                draggable={false}
+                                alt={`${project.title} — project image`}
+                                className="h-auto w-full rounded-lg"
+                                />
+                            )}
+                            </div>
                     ) : null}
-                </div>
+                    <div className="flex flex-col gap-6 md:w-[30vw] md:shrink-0">
+                        {"challenges" in project && project.challenges ? (
+                        <div>
+                            <h3 className="heading-text">Challenges</h3>
+                            <ul className="mt-2 list-disc list-inside body-text">
+                            {project.challenges.map((challenge, index) => (
+                                <li key={index} className="body-text">{challenge}</li>
+                            ))}
+                            </ul>
+                        </div>
+                        ) : null}
+
+                        {"impact" in project && project.impact ? (
+                            <div>
+                                <h3 className="heading-text">Impact</h3>
+                                <p className="mt-2 body-text">
+                                {project.impact}
+                                </p>
+                            </div>
+                        ) : null}
+                    </div>
                 <BackToTop />
 
                     
-            </div>
+            </div>                
+            </FadeIn>
+
 
 
 

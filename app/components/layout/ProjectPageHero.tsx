@@ -5,14 +5,14 @@ export default function ProjectPageHero({ type, title, subtitle, date, coverImg 
   return (
     <div className="flex flex-col lg:flex-row items-center bg-[var(--black-primary)] py-8 lg:px-20">
 
-  <div className="flex flex-col px-8 py-8 lg:flex-1 lg:min-w-[280px]">
+  <div className="flex flex-col px-8 py-8 lg:flex-1 lg:min-w-[280px] fadeInUp-animation ">
     <p className="type-hero">{type}</p>
             <h1 className="title-hero">{title}</h1>
             <p className="subtitle-hero">{subtitle}</p>
         </div>
 
             {coverImg ? (
-                <div className="w-full lg:flex-1 lg:min-w-[400px] py-8">
+                <div className="w-full lg:flex-1 lg:min-w-[400px] py-8 fadeInUp-animation">
 
                 {coverImg.startsWith("/") ? (
                     <Image
