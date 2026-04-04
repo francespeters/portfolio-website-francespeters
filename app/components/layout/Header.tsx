@@ -11,7 +11,7 @@ const Header = () => {
   return (
     <div className="w-full bg-brand-ink">
       <header className="mx-auto max-w-[1400px] px-6">
-        <div className="flex w-full items-center justify-between pt-1">
+        <div className="flex w-full items-center gap-[50vw] sm:gap-[45vw] sm:justify-start md:justify-between lg:justify-between xl:justify-between pt-1">
           {isProjectPage ? (
             <Link
               href="/home"
@@ -22,7 +22,7 @@ const Header = () => {
           ) : (
             <Link
               href="/home"
-              className="text-xl font-semibold !text-brand-paper no-underline"
+              className="text-xl font-semibold !text-brand-paper no-underline shrink-0"
             >
               <img src="/images/myLogo.png" alt="Logo" className="h-24 w-auto" />
 

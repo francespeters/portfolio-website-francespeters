@@ -146,22 +146,46 @@ export default function CursorProvider({ children }: { children: ReactNode }) {
     <CursorContext.Provider value={setModeStable}>
       {children}
       {showCursorOverlay ? (
-        <div
-          ref={layerRef}
-          aria-hidden
-          className={`pointer-events-none fixed left-0 top-0 z-[10050] will-change-transform ${visible ? "opacity-100" : "opacity-0"}`}
-          style={{ transform: "translate(-100px, -100px) translate(-50%, -50%)" }}
-        >
-          {mode === "dot" ? (
-            <div className="h-7 w-7 shrink-0 rounded-full bg-brand-paper shadow-md ring-2 ring-black/25" />
-          ) : (
-            <div className="flex items-center gap-2 rounded-full  bg-brand-paper px-4 py-2.5 text-[11px] font-semibold uppercase tracking-[0.12em] text-brand-ink shadow-lg sm:px-5 sm:text-xs">
-              <span className="whitespace-nowrap">View case study</span>
-              <ArrowIcon className="h-3.5 w-3.5 shrink-0" aria-hidden />
+          <div
+            ref={layerRef}
+            aria-hidden
+            className={`pointer-events-none fixed left-0 top-0 z-[10050] will-change-transform ${visible ? "opacity-100" : "opacity-0"}`}
+            style={{ transform: "translate(-100px, -100px) translate(-50%, -50%)" }}
+          >
+            <div
+              className="flex items-center justify-center overflow-hidden rounded-full bg-brand-paper"
+              style={{
+                maxWidth: mode === "caseStudy" ? "200px" : "28px",
+                height:   mode === "caseStudy" ? "36px"  : "28px",
+                padding:  mode === "caseStudy" ? "0 20px" : "0",
+                boxShadow:
+                  mode === "caseStudy"
+                    ? "0 10px 15px -3px rgb(0 0 0/0.1), 0 4px 6px -4px rgb(0 0 0/0.1)"
+                    : "0 4px 6px -1px rgb(0 0 0/0.1)",
+                outline:       mode === "dot" ? "2px solid rgb(0 0 0/0.25)" : "none",
+                outlineOffset: "-2px",
+                transition: [
+                  "max-width 0.4s cubic-bezier(0.34,1.15,0.64,1)",
+                  "height 0.4s cubic-bezier(0.34,1.15,0.64,1)",
+                  "padding 0.4s cubic-bezier(0.34,1.15,0.64,1)",
+                  "box-shadow 0.3s ease",
+                  "outline 0.2s ease",
+                ].join(", "),
+              }}
+            >
+              <span
+                className="flex shrink-0 items-center gap-2 whitespace-nowrap text-[11px] font-semibold uppercase tracking-[0.12em] text-brand-ink"
+                style={{
+                  opacity:    mode === "caseStudy" ? 1 : 0,
+                  transition: "opacity 0.15s ease 0.2s", // fade in after shape opens
+                }}
+              >
+                View case study
+                <ArrowIcon className="h-3.5 w-3.5 shrink-0" aria-hidden />
+              </span>
             </div>
-          )}
-        </div>
-      ) : null}
+          </div>
+        ) : null}
     </CursorContext.Provider>
   );
 }
