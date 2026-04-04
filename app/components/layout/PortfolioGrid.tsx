@@ -1,5 +1,8 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
+import { useSetCursorMode } from "../providers/CursorProvider";
 import ItemTag from "../ui/ItemTag";
 import Projects from "../../database/projects.json";
 
@@ -14,6 +17,8 @@ export default function PortfolioGrid({
   projects = Projects as PortfolioProject[],
   className = "",
 }: PortfolioGridProps) {
+  const setCursorMode = useSetCursorMode();
+
   return (
     <ul className={`columns-1 gap-4 p-0 sm:columns-2 ${className} list-none `}>
       {projects.map((project) => {
@@ -23,7 +28,12 @@ export default function PortfolioGrid({
             : project.title;
 
         return (
-        <li key={project.id} className="mb-4 break-inside-avoid">
+        <li
+          key={project.id}
+          className="mb-4 break-inside-avoid"
+          onMouseEnter={() => setCursorMode("caseStudy")}
+          onMouseLeave={() => setCursorMode("dot")}
+        >
           <Link
             href={project.href}
             className="group block overflow-hidden rounded-sm  border-neutral-200 bg-brand-surface text-inherit shadow-sm transition-[box-shadow,transform] hover:-translate-y-0.5 hover:shadow-md "
@@ -57,7 +67,7 @@ export default function PortfolioGrid({
 
             
           </Link>
-          <footer className="border-t border-neutral-200 bg-color-brand-surface px-2 pt-3 dark:border-neutral-800">
+          <footer className=" px-2 pt-3 dark:border-neutral-800">
               <ItemTag text={project.tagText} date={project.date} />
             </footer>
         </li>

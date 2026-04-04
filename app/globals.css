@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 :root {
-  --black-primary: #1d1d1d;
+  --black-primary: #121212;
   --white-primary: #ffffff;
   --grey-primary: #2c2c2c;
 }
@@ -46,6 +46,24 @@ body {
 /* Next <Link> → <a>. Bootstrap underlines links; keep header nav clean. */
 header a {
   text-decoration: none;
+}
+
+/* While portfolio hover shows the “View case study” pill, hide the system cursor */
+html.custom-cursor-case-study,
+html.custom-cursor-case-study * {
+  cursor: none !important;
+}
+
+html.custom-cursor-case-study input[type="text"],
+html.custom-cursor-case-study input[type="search"],
+html.custom-cursor-case-study input[type="email"],
+html.custom-cursor-case-study input[type="password"],
+html.custom-cursor-case-study input[type="url"],
+html.custom-cursor-case-study input[type="tel"],
+html.custom-cursor-case-study input[type="number"],
+html.custom-cursor-case-study textarea,
+html.custom-cursor-case-study [contenteditable="true"] {
+  cursor: text !important;
 }
 
 body {
@@ -96,28 +114,6 @@ body {
 
 }
 
-
-
-.bubble h3 {
-  color: black;
-  font-family: "Helvetica Neue";
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 140%; /* 15.4px */
-  letter-spacing: -0.11px;
-}
-
-.bubble p {
-  color: #000;
-  font-family: "Helvetica Neue";
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 140%; /* 15.4px */
-  letter-spacing: -0.11px;
-}
-
 h1{
   color: white;
   font-family: "Helvetica Neue";
@@ -153,4 +149,24 @@ h1{
   font-weight: 500;
   line-height: normal;
   text-transform: uppercase;
+}
+
+.body-text{
+  color: #000;
+  font-family: "Labil Grotesk";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 200;
+  line-height: 140%; /* 15.4px */
+  letter-spacing: -0.11px;
+}
+
+.heading-text{
+  color: #000;
+  font-family: "Labil Grotesk";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%; /* 15.4px */
+  letter-spacing: -0.11px;
 }

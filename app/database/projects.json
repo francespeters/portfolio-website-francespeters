@@ -11,7 +11,7 @@
     "problem":"During my HCI class we were tasked with designing a solution to foster a greater sense of belonging among students at Northeastern University. Through background research and user interviews, we learned that students often recognized classmates in their courses but struggled to form meaningful in-class connections. Based on these insights, we focused on creating a mobile application that helps students engage with peers specifically through their courses. Our goal was to turn classroom familiarity into real social connections.",
     "hypothesis":"If Northeastern students can easily find classmates, join study groups, and message peers through a class-focused app, then they will form stronger in-class academic connections by reducing social barriers and facilitating collaboration.",
     "role":"I contributed to the entire design process, from research to high-fidelity prototypes, collaborating with teammates on ideation, usability testing, and interface design. I worked closely with the team to synthesize insights, iterate on concepts, and ensure the solution aligned with both user needs and functional requirements.",
-    "img1": "/images/course1.png",
+    "img1": "/images/courseimg1.png",
     "cover":"/images/courseCoverImg.png",
     "imageSrc": "/images/courseCoverImg.png",
     "gifs": [
@@ -19,6 +19,7 @@
       "/images/recpt2.gif"
     ],
     "diagram": "/images/courseDiagram.png",
+    "img3": "/images/courseimg3.png",
     "research": [
       "We conducted interviews with two Northeastern students to understand their experiences with belonging and peer interaction. Using this qualitative research, we developed two user personas, incorporating common pain points and user goals. ",
       "We generated 15 ideas, then created two paper prototypes: CourseConnect (focused on in-class connections) and Meet n’ Eat (focused on shared activities). Usability testing on the prototypes allowed us to identify strengths and areas for improvement. ",

@@ -3,16 +3,17 @@ import Image from "next/image";
 
 export default function ProjectPageHero({ type, title, subtitle, date, coverImg }: { type?: string; title: string; subtitle?: string; date: string; coverImg?: string }) {
   return (
-    <div className="flex flex-col md:flex-row items-center bg-[var(--black-primary)] py-8">
+    <div className="flex flex-col lg:flex-row items-center bg-[var(--black-primary)] py-8 lg:px-20">
 
-        <div className="flex flex-col items-center  px-6 py-8 md:items-start md:text-left md:flex-1 ">
-            <p className="type-hero">{type}</p>
+  <div className="flex flex-col px-8 py-8 lg:flex-1 lg:min-w-[280px]">
+    <p className="type-hero">{type}</p>
             <h1 className="title-hero">{title}</h1>
             <p className="subtitle-hero">{subtitle}</p>
         </div>
 
             {coverImg ? (
-                <div className="w-full md:flex-1 md:min-w-[400px] py-8 order-2">
+                <div className="w-full lg:flex-1 lg:min-w-[400px] py-8">
+
                 {coverImg.startsWith("/") ? (
                     <Image
                     src={coverImg}
