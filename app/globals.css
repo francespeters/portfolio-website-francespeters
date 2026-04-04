@@ -1,5 +1,30 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: "Labil Grosek";
+  src: url("/fonts/LabilGrosek-Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Labil Grosek";
+  src: url("/fonts/LabilGrosek-Medium.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Labil Grosek";
+  src: url("/fonts/LabilGrosek-Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+
 :root {
   --black-primary: #121212;
   --white-primary: #ffffff;

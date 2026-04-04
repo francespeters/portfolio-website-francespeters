@@ -1,5 +1,6 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./globals.css";
+import '../fonts.css';
 
 import Header from "./components/layout/Header";
 import CursorProvider from "./components/providers/CursorProvider";
