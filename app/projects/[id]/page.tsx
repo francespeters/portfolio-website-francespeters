@@ -126,7 +126,7 @@ export default async function ProjectPage({
                     </div>
                 ) : null}
 
-                {"quotes" in project && project.quotes ? (
+                {"quotes" in project && project.quotes && project.quotes.length > 0 ? (
                     <div className="flex flex-col gap-6">
                         {Array.isArray(project.quotes) ? (
                         project.quotes.map((quote, index) => (
@@ -135,6 +135,16 @@ export default async function ProjectPage({
                         ) : (
                         <QuoteCard quote={project.quotes} />
                         )}
+                    </div>
+                    ) : "altImg" in project && project.altImg ? (
+                    <div className="min-w-0 flex-1">
+                        {/* eslint-disable-next-line @next/next/no-img-element */}
+                        <img
+                        src={project.altImg}
+                        draggable={false}
+                        alt={`${project.title} — project image`}
+                        className="h-auto w-full rounded-lg"
+                        />
                     </div>
                 ) : null}
 

@@ -21,6 +21,8 @@ export default function ProjectPageHero({ type, title, subtitle, date, coverImg 
                     width={1000}
                     height={800}
                     draggable={false}
+                    loading="eager"
+                    priority
                     className="h-auto w-full min-w-[300px] rounded-lg"
                     />
                 ) : (

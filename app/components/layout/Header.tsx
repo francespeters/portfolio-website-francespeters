@@ -15,7 +15,7 @@ const Header = () => {
           {isProjectPage ? (
             <Link
               href="/home"
-              className="mt-3 inline-flex h-20 w-20 items-center justify-center rounded-full text-sm font-semibold !text-brand-paper no-underline transition-colors hover:border-brand-ink hover:!bg-brand-paper hover:!text-brand-ink"
+              className="mt-3 inline-flex h-20 w-20 items-center justify-center rounded-full text-sm font-semibold !text-brand-paper no-underline transition-colors "
             >
               Back
             </Link>
