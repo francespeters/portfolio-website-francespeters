@@ -38,37 +38,7 @@
     ],
     "impact": "Course Connect provided a structured, personalized way for students to connect with classmates, making it easier to form study groups and friendships while also offering a centralized class chat platform. By reducing social friction, CourseConnect aims to help increase student engagement and support a stronger sense of belonging on campus.",
     "takeaways": "I learned the importance of designing for emotional experience, not just usability and aesthetics, particularly when addressing social connection. Iterative testing, clear heuristics, and personalization were critical in creating interfaces that were both effective and engaging, while respecting user privacy and preferences."
-
   },
-  {
-    "id": "petrichor",
-    "title": "Petrichor",
-    "href": "/projects/petrichor",
-    "tagText": "Product design",
-    "date": "2024",
-    "type":"Project",
-    "subtitle":"Beverage Branding & Packaging Design",
-    "aspect":"aspect-[5/3]",
-    "problem":"This was a project I worked on for my Identity and Brand Design course. Our task was to observe beverages in the world and then build our own brand. I found it interesting how water, something that is a daily necessity, could come in so many different forms with their own individual brand tones and personality. I took inspiration from water brands like Voss, but wanted to create a brand that felt more connected to nature and the environment. My goal was to create a brand that not only provided a refreshing beverage but also inspired consumers to embrace a lifestyle that values and protects the environment.",
-    "cover":"/images/screen_p.jpg",
-    "imageSrc": "/images/petrichorImg.png",
-    "altImg":"/images/petrichoralt.png",
-    "research": [
-      "The initial idea stemmed from the word petrichor and from there I built a water brand that echoed the and natural essence of this word. Every design choice was intentional, from the water-drop shape of the bottle to its glass material. I chose to let the features of the typeface do most of the talking for the logo. The sparkling water variation was signaled through the sun rays around the word sparkling, meant to convey the effect of sun reflecting off of water."
-     ],
-    "img3": "/images/ad_p.jpg",
-    "screensImg": "/images/packaging_p.jpg",
-    "solution": "Petrichor is a brand that embodies the idea of eco-friendly products as it is continuing the rain cycle by filtering rainwater and making it safe to drink. The name Petrichor refers to the pleasant, earthy scent produced when rain falls on dry soil, symbolizing renewal and freshness. As a brand, Petrichor is dedicated to creating sustainable, environmentally conscious water beverages that not only provide everyday refreshment but also promote a deeper connection with the natural world. In order to enjoy the smell of petrichor, you have to be outside in nature, and that is the feeling I wanted to evoke with this brand. From glass, reusable packaging to ethically sourced ingredients, Petrichor aims to inspire consumers to embrace a lifestyle that values and protects the environment.",
-    "challenges":[
-      "Rainwater consumption is not yet feasible due to of purification limitations.",
-      "Balancing poetic branding with credibility required attention to visual complexity.",
-      "Ensuring the minimal logo felt intentional rather than under-designed required thoughtful typographic refinement."
-    ],
-    "impact":"Petrichor’s touchpoints include the logo, packaging, labels, and advertisements. Each touchpoint was crafted to reflect the brand's commitment to sustainability and its connection to nature.The logo features a minimalistic design, letting the Adobe Monarcha typeface do the talking. The typeface appears rhythmic, like rain, and feels even a bit poetic. The packaging is made from glass, a sustainable material that can be reused and recycled while the shape itself resembles a water droplet, reinforcing the brand's connection to water and nature. The labels are designed to be simple, reflecting the purity of the product, while also incorporating elements like the definitions of petrichor."
-
-  },
-  
-  
   {
     "id": "nextstop-ar",
     "title": "NextStop AR",
@@ -109,15 +79,32 @@
     "impact": "The prototype demonstrated how AR could modernize transit navigation and improve accessibility within Boston T stations. By addressing navigation frustrations, the concept showed potential to enhance rider confidence, reduce confusion, and create a more tourist-friendly transit experience.",
     "takeaways": "This project strengthened my ability to identify gaps in an existing product landscape and propose innovative, emerging-technology solutions. I learned the importance of clear onboarding when introducing unfamiliar technology and how strong visual hierarchy and accessibility decisions can reduce cognitive load in high-stress environments. It also reinforced how emerging tools like AR can solve real usability problems and not just serve as a novelty."
 
-
   },
   {
-    "id": "mohai",
-    "title": "Mohai Museum Redesign",
-    "href": "/projects/mohai",
-    "tagText": "Research | Prototype",
-    "date": "2022",
-    "imageSrc":"/images/maps.png",
-    "cover":"/images/maps.png"
+    "id": "petrichor",
+    "title": "Petrichor",
+    "href": "/projects/petrichor",
+    "tagText": "Product design",
+    "date": "2024",
+    "type":"Project",
+    "subtitle":"Beverage Branding & Packaging Design",
+    "aspect":"aspect-[5/3]",
+    "problem":"This was a project I worked on for my Identity and Brand Design course. Our task was to observe beverages in the world and then build our own brand. I found it interesting how water, something that is a daily necessity, could come in so many different forms with their own individual brand tones and personality. I took inspiration from water brands like Voss, but wanted to create a brand that felt more connected to nature and the environment. My goal was to create a brand that not only provided a refreshing beverage but also inspired consumers to embrace a lifestyle that values and protects the environment.",
+    "cover":"/images/screen_p.jpg",
+    "imageSrc": "/images/petrichorImg.png",
+    "altImg":"/images/petrichoralt.png",
+    "research": [
+      "The initial idea stemmed from the word petrichor and from there I built a water brand that echoed the and natural essence of this word. Every design choice was intentional, from the water-drop shape of the bottle to its glass material. I chose to let the features of the typeface do most of the talking for the logo. The sparkling water variation was signaled through the sun rays around the word sparkling, meant to convey the effect of sun reflecting off of water."
+     ],
+    "img3": "/images/ad_p.jpg",
+    "screensImg": "/images/packaging_p.jpg",
+    "solution": "Petrichor is a brand that embodies the idea of eco-friendly products as it is continuing the rain cycle by filtering rainwater and making it safe to drink. The name Petrichor refers to the pleasant, earthy scent produced when rain falls on dry soil, symbolizing renewal and freshness. As a brand, Petrichor is dedicated to creating sustainable, environmentally conscious water beverages that not only provide everyday refreshment but also promote a deeper connection with the natural world. In order to enjoy the smell of petrichor, you have to be outside in nature, and that is the feeling I wanted to evoke with this brand. From glass, reusable packaging to ethically sourced ingredients, Petrichor aims to inspire consumers to embrace a lifestyle that values and protects the environment.",
+    "challenges":[
+      "Rainwater consumption is not yet feasible due to of purification limitations.",
+      "Balancing poetic branding with credibility required attention to visual complexity.",
+      "Ensuring the minimal logo felt intentional rather than under-designed required thoughtful typographic refinement."
+    ],
+    "impact":"Petrichor’s touchpoints include the logo, packaging, labels, and advertisements. Each touchpoint was crafted to reflect the brand's commitment to sustainability and its connection to nature.The logo features a minimalistic design, letting the Adobe Monarcha typeface do the talking. The typeface appears rhythmic, like rain, and feels even a bit poetic. The packaging is made from glass, a sustainable material that can be reused and recycled while the shape itself resembles a water droplet, reinforcing the brand's connection to water and nature. The labels are designed to be simple, reflecting the purity of the product, while also incorporating elements like the definitions of petrichor."
+
   }
 ]

@@ -24,7 +24,8 @@ const Header = () => {
               href="/home"
               className="text-xl font-semibold !text-brand-paper no-underline"
             >
-              Frances Peters
+              <img src="/images/mylogo.png" alt="Logo" className="h-24 w-auto" />
+
             </Link>
           )}
 
