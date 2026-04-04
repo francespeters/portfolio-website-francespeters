@@ -4,10 +4,10 @@ export default function ItemTag({ text, date, color = "text-white" }: { text: st
   return (
     <div className="w-full flex items-center justify-between">
       <div>
-        <p className={`text-${color}`}>{text}</p>
+        <p className="tag-text">{text}</p>
       </div>
       <div>
-        <p className={`text-${color}`}>{date}</p>
+        <p className="tag-text">{date}</p>
       </div>
     </div>
   );

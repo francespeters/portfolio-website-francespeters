@@ -174,6 +174,21 @@ export default async function ProjectPage({
                     </p>
                 </div>
               ) : null}
+
+            {"screensImg" in project && project.screensImg ? (
+                <div className="mt-8 flex flex-wrap gap-6 justify-center">
+                    {project.screensImg && (
+                          <div className="w-full max-w-4xl">
+                            <img
+                                src={project.screensImg}
+                                draggable={false}
+                                alt={`${project.title} — project diagram`}
+                                className="h-auto w-full "
+                            />
+                        </div>
+                    )}
+                </div>
+            ):null}
             
             {project.gifs && project.gifs.length > 0 ? (
                 <div className="mt-8 flex flex-wrap gap-6 justify-center">
@@ -219,7 +234,7 @@ export default async function ProjectPage({
                     {"challenges" in project && project.challenges ? (
                     <div>
                         <h3 className="heading-text">Challenges</h3>
-                        <ul className="mt-2">
+                        <ul className="mt-2 list-disc list-inside body-text">
                         {project.challenges.map((challenge, index) => (
                             <li key={index} className="body-text">{challenge}</li>
                         ))}
