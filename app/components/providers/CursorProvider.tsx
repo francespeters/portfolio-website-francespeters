@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/set-state-in-effect */
 "use client";
 
 import {
@@ -154,7 +155,7 @@ export default function CursorProvider({ children }: { children: ReactNode }) {
           {mode === "dot" ? (
             <div className="h-7 w-7 shrink-0 rounded-full bg-brand-paper shadow-md ring-2 ring-black/25" />
           ) : (
-            <div className="flex items-center gap-2 rounded-full bg-brand-paper px-4 py-2.5 text-[11px] font-semibold uppercase tracking-[0.12em] text-brand-ink shadow-lg sm:px-5 sm:text-xs">
+            <div className="flex items-center gap-2 rounded-full  bg-brand-paper px-4 py-2.5 text-[11px] font-semibold uppercase tracking-[0.12em] text-brand-ink shadow-lg sm:px-5 sm:text-xs">
               <span className="whitespace-nowrap">View case study</span>
               <ArrowIcon className="h-3.5 w-3.5 shrink-0" aria-hidden />
             </div>

@@ -7,15 +7,18 @@ import ItemTag from "../ui/ItemTag";
 import Projects from "../../database/projects.json";
 import { useInView } from "@/app/hooks/useInView";
 
-export type PortfolioProject = (typeof Projects)[number];
 
 type PortfolioGridProps = {
   projects?: PortfolioProject[];
   className?: string;
 };
 
-function PortfolioItem({ project, setCursorMode }: { project: PortfolioProject; setCursorMode: (mode: string) => void }) {
-  const { ref, inView } = useInView();
+
+export type PortfolioProject = (typeof Projects)[number];
+
+function PortfolioItem({ project }: { project: PortfolioProject }) {
+  const { ref, inView } = useInView<HTMLLIElement>();
+  const setCursorMode = useSetCursorMode(); // <-- use the context hook directly
 
   const imageAlt =
     "imageAlt" in project && typeof project.imageAlt === "string"
@@ -33,7 +36,11 @@ function PortfolioItem({ project, setCursorMode }: { project: PortfolioProject; 
         href={project.href}
         className="group block overflow-hidden rounded-sm border-neutral-200 bg-brand-surface text-inherit shadow-sm transition-[box-shadow,transform] hover:-translate-y-0.5 hover:shadow-md"
       >
-        <div className={`relative w-full ${"aspect" in project && project.aspect ? project.aspect : "aspect-[4/3]"}`}>
+        <div
+          className={`relative w-full ${
+            "aspect" in project && project.aspect ? project.aspect : "aspect-[4/3]"
+          }`}
+        >
           {"imageSrc" in project && project.imageSrc ? (
             String(project.imageSrc).startsWith("/") ? (
               <Image
@@ -68,13 +75,11 @@ function PortfolioItem({ project, setCursorMode }: { project: PortfolioProject; 
 export default function PortfolioGrid({
   projects = Projects as PortfolioProject[],
   className = "",
-}: PortfolioGridProps) {
-  const setCursorMode = useSetCursorMode();
-
+}: { projects?: PortfolioProject[]; className?: string }) {
   return (
     <ul className={`columns-1 gap-4 p-0 sm:columns-2 ${className} list-none`}>
       {projects.map((project) => (
-        <PortfolioItem key={project.id} project={project} setCursorMode={setCursorMode} />
+        <PortfolioItem key={project.id} project={project} />
       ))}
     </ul>
   );
