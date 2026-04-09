@@ -16,5 +16,23 @@
   
     "frustrations": "Feels nervous in new classes or large social settings without familiar faces. She sometimes struggles to keep in touch with people outside of daily routines or shared classes. When it comes to coursework, it feels isolating unless there’s a support system. "
     
+  },
+  {
+    "id": "luma-jane",
+    "projectId": "luma",
+    "sortOrder": 0,
+    "name": "Jane",
+    "avatarSrc": "/images/persona-jane.jpg",
+    "quote": "At the beginning of the semester, if there’s a class I’m nervous about, seeing someone I know is always a relief. The more I see and talk to people, even in small ways, the more comfortable and connected I feel.",
+    "demographics": [
+      { "label": "Age", "value": "19" },
+      { "label": "Location", "value": "Boston, MA" },
+      { "label": "Education", "value": "Undergraduate" },
+      { "label": "Tech comfort", "value": "High" }
+    ],
+    "goals": "To strengthen friendships through shared experiences in academics and social settings. To recognize people in everyday spaces and develop a sense of belonging through repeated interactions.",
+  
+    "frustrations": "Feels nervous in new classes or large social settings without familiar faces. She sometimes struggles to keep in touch with people outside of daily routines or shared classes. When it comes to coursework, it feels isolating unless there’s a support system. "
+    
   }
 ]

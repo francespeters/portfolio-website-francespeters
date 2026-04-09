@@ -40,6 +40,7 @@
     "impact": "Course Connect provided a structured, personalized way for students to connect with classmates, making it easier to form study groups and friendships while also offering a centralized class chat platform. By reducing social friction, CourseConnect aims to help increase student engagement and support a stronger sense of belonging on campus.",
     "takeaways": "I learned the importance of designing for emotional experience, not just usability and aesthetics, particularly when addressing social connection. Iterative testing, clear heuristics, and personalization were critical in creating interfaces that were both effective and engaging, while respecting user privacy and preferences."
   },
+  
   {
     "id": "nextstop-ar",
     "title": "NextStop AR",
@@ -48,7 +49,7 @@
     "subtitle": "Augmented Reality for Transit Navigation",
     "tagText": "UX Research | UX Design",
     "date": "2024",
-    "aspect":"aspect-[5/3]",
+    "aspect":"aspect-[4/3]",
     "problem":"Navigating the Massachusetts Bay Transportation Authority (MBTA), also known as the Boston T, can be confusing, especially for tourists unfamiliar with the system. Through observation and secondary research, we identified common pain points such as: unclear signage, complex station layouts, unfamiliar terminology, language barriers, and accessibility challenges. Our primary target users were tourists new to Boston who needed clear directional assistance within T stations.",
     "hypothesis":"How might we design a mobile app that improves navigation within the Boston T to provide users, primarily tourists, with a more intuitive, accessible, and stress-free navigation experience.",
     "role":"I led and worked collaboratively with a UX design team to conceptualize and prototype the solution in Figma. I contributed to competitive research, ideation, sketching, interface design, and interaction design. We worked together to evaluate ideas, refine the overall concept, and iterate on prototype fidelity, focusing on accessibility and usability priorities.",
@@ -82,6 +83,47 @@
 
   },
   {
+  "id": "luma",
+  "title": "Luma",
+  "subtitle": "Designing for Sustainable Consumption & Awareness",
+  "href": "/projects/luma",
+  "type": "Case Study",
+  "tagText": "UX Research | UX Design",
+  "date": "2024",
+  "aspect": "aspect-[4/3]",
+  "problem": "The United Nations Sustainable Development Goal 12 (SDG 12) aims to ensure responsible consumption and production by 2030, emphasizing waste reduction and increased sustainability awareness. Despite growing concern around climate change, individuals often feel overwhelmed or unsure how to meaningfully adjust their daily consumption habits. Existing solutions tend to focus heavily on cost savings or data tracking, rather than fostering sustainable behaviors. This project explores how design can reduce waste and increase sustainability awareness by supporting more intentional, everyday consumption practices.",
+  "hypothesis": "If individuals are provided with an intuitive, integrated system that translates household consumption data into actionable insights and habit-building opportunities, then they will be more likely to adopt sustainable behaviors and reduce waste over time by lowering cognitive barriers and increasing awareness.",
+  "role": "I led the end-to-end design process, conducting research, synthesizing insights, ideating concepts, and developing prototypes. I independently explored the problem space, analyzed competitors, and iterated on interaction models to ensure the solution balanced clarity, engagement, and behavioral impact.",
+  "img1": "/images/lumaimg1.png",
+  "cover": "/images/lumaSrc.png",
+  "imageSrc": "/images/lumaSrc.png",
+  "gifs": [
+    "/images/luma1.gif",
+    "/images/luma2.gif"
+  ],
+  "diagram": "/images/lumawireframes.png",
+  "img3": "/images/lumawireframes.png",
+  "research": [
+    "I conducted secondary research to understand barriers to sustainable consumption, exploring topics such as the limitations of recycling systems, rising fossil fuel dependence, increasing energy demand, and the widespread feeling of individual helplessness in addressing climate change.",
+    "To better understand the current product landscape, I analyzed existing household energy tracking tools such as Sense and Emporia. These platforms often prioritize cost reduction over sustainability, present overly complex data visualizations, and lack features that encourage long-term behavioral change or habit formation.",
+    "User insights revealed a desire for motivation and accountability, which inspired the inclusion of a community-driven gamification feature. Based on these findings, I brainstormed 10 concept directions and synthesized key opportunities around engagement, personalization, and reducing cognitive overload."
+  ],
+  "quotes": [
+    "“It feels like no matter what I do, it doesn’t really make a difference.”",
+    "“Most apps just show numbers—I don’t know what I’m supposed to do with that.”"
+  ],
+  "screensImg": "/images/lumaWireframes.png",
+  "img2": "/images/lumawireframes.png",
+  "solution": "Luma is a wall-mounted tablet designed to integrate directly into the home environment, making sustainable decision-making visible and unavoidable within daily routines—similar to how users interact with a thermostat. Unlike mobile apps that can be easily ignored, Luma creates a persistent touchpoint for awareness and action. The system translates complex household consumption data into clear, actionable insights while encouraging sustainable habits through personalized recommendations and feedback loops. \n\nA key differentiator is Luma’s community page, which incorporates gamification elements inspired by user interviews. Users can engage with others, track progress, and stay motivated through shared goals and light competition, reinforcing long-term behavior change.\n\nLuma also offers deep personalization. Users can tailor the interface based on their priorities—whether focused on budgeting or sustainability—with dynamic language and widgets that adapt accordingly. Customizable dashboards allow users to control the level of data displayed, reducing cognitive overload while maintaining flexibility. A companion mobile pairing feature extends the experience by delivering notifications and updates directly to the user’s phone.",
+  "challenges": [
+    "Balancing detailed data with clarity → simplified visual hierarchy and customizable widgets to reduce cognitive overload.",
+    "Designing for sustained engagement → introduced gamification and community features to reinforce motivation over time.",
+    "Bridging physical and digital interaction → developed a wall-mounted system that integrates seamlessly into daily routines while supporting mobile notifications."
+  ],
+  "impact": "Luma introduces a more human-centered approach to sustainable consumption by combining visibility, personalization, and motivation. By embedding the experience into the physical home environment and reinforcing it through community engagement and mobile touchpoints, the concept encourages consistent interaction and stronger habit formation. This approach empowers users to feel a greater sense of agency in reducing their environmental impact.",
+  "takeaways": "This project reinforced the importance of designing for behavior change, not just information delivery. I learned how integrating products into existing routines, leveraging social motivation through gamification, and offering meaningful personalization can significantly increase engagement. Simplifying complex systems while maintaining flexibility was critical in creating an experience that feels both actionable and empowering."
+  },
+  {
     "id": "petrichor",
     "title": "Petrichor",
     "href": "/projects/petrichor",
@@ -89,7 +131,7 @@
     "date": "2024",
     "type":"Project",
     "subtitle":"Beverage Branding & Packaging Design",
-    "aspect":"aspect-[5/3]",
+    "aspect":"aspect-[4/3]",
     "problem":"This was a project I worked on for my Identity and Brand Design course. Our task was to observe beverages in the world and then build our own brand. I found it interesting how water, something that is a daily necessity, could come in so many different forms with their own individual brand tones and personality. I took inspiration from water brands like Voss, but wanted to create a brand that felt more connected to nature and the environment. My goal was to create a brand that not only provided a refreshing beverage but also inspired consumers to embrace a lifestyle that values and protects the environment.",
     "cover":"/images/screen_p.jpg",
     "imageSrc": "/images/packaging_p.jpg",
