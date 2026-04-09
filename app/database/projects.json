@@ -85,13 +85,14 @@
   "problem": "The United Nations Sustainable Development Goal 12 (SDG 12) aims to ensure responsible consumption and production by 2030, emphasizing waste reduction and increased sustainability awareness. Despite growing concern around climate change, individuals often feel overwhelmed or unsure how to meaningfully adjust their daily consumption habits. Existing solutions tend to focus heavily on cost savings or data tracking, rather than fostering sustainable behaviors. This project explores how design can reduce waste and increase sustainability awareness by supporting more intentional, everyday consumption practices.",
   "hypothesis": "If individuals are provided with an intuitive, integrated system that translates household consumption data into actionable insights and habit-building opportunities, then they will be more likely to adopt sustainable behaviors and reduce waste over time by lowering cognitive barriers and increasing awareness.",
   "role": "I led the end-to-end design process, conducting research, synthesizing insights, ideating concepts, and developing prototypes. I independently explored the problem space, analyzed competitors, and iterated on interaction models to ensure the solution balanced clarity, engagement, and behavioral impact.",
-  "img1": "/images/lumaimg1.png",
-  "cover": "/images/lumaSrc.png",
-  "imageSrc": "/images/lumaSrc.png",
+  "img1": "/images/Lumaimg1.png",
+  "cover": "/images/LumaSrc.png",
+  "imageSrc": "/images/LumaSrc.png",
   "gifs": [
     "/images/Part1Lumalarge.gif",
     "/images/part2Lumalarge.gif"
   ],
+  "screensImg": "/images/lumaWireframes.png",
   "diagram": "/images/lumamap.png",
   "img3": "/images/Lumaposter.png",
   "research": [
