@@ -36,7 +36,7 @@ export default function AnimatedTabButtons({ className = "" }: AnimatedTabButton
   const tabBase =
     "h-16 w-16 sm:h-20 sm:w-20 cursor-pointer rounded-full flex items-center justify-center text-center text-xs font-semibold leading-tight no-underline select-none sm:text-sm";
   const tabInactive =
-" bg-brand-ink !text-brand-paper ring-1 ring-brand-paper transition-all hover:ring-0 hover:bg-brand-surface hover:!text-brand-paper translate-y-4";
+" bg-brand-ink !text-brand-paper ring-1 ring-brand-paper transition-all hover:ring-0 hover:bg-brand-ink hover:!text-brand-paper translate-y-4";
     const tabActive =
     "border border-white/20 bg-brand-paper !text-brand-ink shadow-lg";
 

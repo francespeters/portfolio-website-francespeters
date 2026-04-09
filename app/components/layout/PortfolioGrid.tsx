@@ -34,7 +34,7 @@ function PortfolioItem({ project }: { project: PortfolioProject }) {
     >
       <Link
         href={project.href}
-        className="group block overflow-hidden rounded-sm border-neutral-200 bg-brand-surface text-inherit shadow-sm transition-[box-shadow,transform] hover:-translate-y-0.5 hover:shadow-md"
+        className="group block overflow-hidden border-neutral-200 bg-brand-paper text-inherit shadow-sm transition-[box-shadow,transform] hover:-translate-y-0.5 hover:shadow-md"
       >
         <div
           className={`relative w-full ${
@@ -66,7 +66,7 @@ function PortfolioItem({ project }: { project: PortfolioProject }) {
         </div>
       </Link>
       <footer className="px-2 pt-3 dark:border-neutral-800">
-        <ItemTag text={project.tagText} date={project.date} />
+        <ItemTag text={project.title} date={project.date} />
       </footer>
     </li>
   );

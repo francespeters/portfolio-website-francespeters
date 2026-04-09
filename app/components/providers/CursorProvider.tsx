@@ -162,7 +162,7 @@ export default function CursorProvider({ children }: { children: ReactNode }) {
                   mode === "caseStudy"
                     ? "0 10px 15px -3px rgb(0 0 0/0.1), 0 4px 6px -4px rgb(0 0 0/0.1)"
                     : "0 4px 6px -1px rgb(0 0 0/0.1)",
-                outline:       mode === "dot" ? "2px solid rgb(0 0 0/0.25)" : "none",
+                outline:       mode === "dot" ? "none" : "none",
                 outlineOffset: "-2px",
                 transition: [
                   "max-width 0.4s cubic-bezier(0.34,1.15,0.64,1)",

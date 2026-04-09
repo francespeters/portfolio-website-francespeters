@@ -6,9 +6,7 @@ export default function ItemTag({ text, date, color = "text-white" }: { text: st
       <div>
         <p className="tag-text">{text}</p>
       </div>
-      <div>
-        <p className="tag-text">{date}</p>
-      </div>
+      
     </div>
   );
 }

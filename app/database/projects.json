@@ -12,8 +12,8 @@
     "hypothesis":"If Northeastern students can easily find classmates, join study groups, and message peers through a class-focused app, then they will form stronger in-class academic connections by reducing social barriers and facilitating collaboration.",
     "role":"I contributed to the entire design process, from research to high-fidelity prototypes, collaborating with teammates on ideation, usability testing, and interface design. I worked closely with the team to synthesize insights, iterate on concepts, and ensure the solution aligned with both user needs and functional requirements.",
     "img1": "/images/courseimg1.png",
-    "cover":"/images/courseCoverImg.png",
-    "imageSrc": "/images/courseCoverImg.png",
+    "cover":"/images/courseCovernew.png",
+    "imageSrc": "/images/courseCovernew.png",
     "gifs": [
       "/images/recpt1.gif",
       "/images/recpt2.gif"
@@ -29,6 +29,7 @@
       "“It can be hard to put yourself out there… but trying to make connections by going to clubs or finding people in common classes or activities helps.”",
       "“I guess proximity… you end up talking more and more and I just feel like the more you share and they share, the more connected you feel.”"
     ],
+    "screensImg": "/images/CourseWireframes.png",
     "img2": "/images/course2.png",
     "solution": "Our prototype, CourseConnect, allowed students to navigate courses, view classmate profiles, participate in forums, send messages, and join study groups. Personalization features and a familiarly structured interface allows for students to identify peers with shared interests and form connections. Usability testing confirmed that students could successfully engage with the app, join study groups, and message classmates, helping bridge the gap between classroom recognition and real interaction.",
     "challenges":[
@@ -53,7 +54,7 @@
     "role":"I led and worked collaboratively with a UX design team to conceptualize and prototype the solution in Figma. I contributed to competitive research, ideation, sketching, interface design, and interaction design. We worked together to evaluate ideas, refine the overall concept, and iterate on prototype fidelity, focusing on accessibility and usability priorities.",
     "img1": "/images/nextimg1.png",
     "cover":"/images/nextcoverfull.png",
-    "imageSrc": "/images/nextcover.png",
+    "imageSrc": "/images/NextStopSrcnew.png",
     "gifs": [
       "/images/navrec1.gif",
       "/images/navrec.gif"
@@ -91,7 +92,7 @@
     "aspect":"aspect-[5/3]",
     "problem":"This was a project I worked on for my Identity and Brand Design course. Our task was to observe beverages in the world and then build our own brand. I found it interesting how water, something that is a daily necessity, could come in so many different forms with their own individual brand tones and personality. I took inspiration from water brands like Voss, but wanted to create a brand that felt more connected to nature and the environment. My goal was to create a brand that not only provided a refreshing beverage but also inspired consumers to embrace a lifestyle that values and protects the environment.",
     "cover":"/images/screen_p.jpg",
-    "imageSrc": "/images/petrichorImg.png",
+    "imageSrc": "/images/packaging_p.jpg",
     "altImg":"/images/petrichoralt.png",
     "research": [
       "The initial idea stemmed from the word petrichor and from there I built a water brand that echoed the and natural essence of this word. Every design choice was intentional, from the water-drop shape of the bottle to its glass material. I chose to let the features of the typeface do most of the talking for the logo. The sparkling water variation was signaled through the sun rays around the word sparkling, meant to convey the effect of sun reflecting off of water."
