@@ -1,24 +1,24 @@
 @import "tailwindcss";
 
 @font-face {
-  font-family: "Labil Grotsek";
-  src: url("/fonts/LabilGrotsek-Regular.otf") format("opentype");
+  font-family: "Labil Grotesk";
+  src: url("/fonts/LabilGrotesk-Regular.otf") format("opentype");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Labil Grotsek";
-  src: url("/fonts/LabilGrotsek-Medium.otf") format("opentype");
+  font-family: "Labil Grotesk";
+  src: url("/fonts/LabilGrotesk-Medium.otf") format("opentype");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Labil Grotsek";
-  src: url("/fonts/LabilGrotsek-Bold.otf") format("opentype");
+  font-family: "Labil Grotesk";
+  src: url("/fonts/LabilGrotesk-Bold.otf") format("opentype");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -65,7 +65,7 @@
 body {
   background: var(--black-primary);
   color: var(--foreground);
-  font-family: "Labil Grotsek", Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 /* Next <Link> → <a>. Bootstrap underlines links; keep header nav clean. */
@@ -132,7 +132,7 @@ body {
 
 .about-body-text{
   color: #ffffff;
-  font-family: "Labil Grotsek";
+  font-family: "Labil Grotesk";
   font-size: 16px;
   font-style: normal;
   font-weight: 200;
@@ -143,7 +143,7 @@ body {
 
 .quote-body-text{
   color: #000;
-  font-family: "Labil Grotsek";
+  font-family: "Labil Grotesk";
   font-size: 16px;
   font-style: normal;
   font-weight: 200;
@@ -154,7 +154,7 @@ body {
 
 h1{
   color: white;
-  font-family: "Labil Grotsek";
+  font-family: "Helvetica Neue";
   font-weight: 400;
   letter-spacing: -0.11px;
 
@@ -162,7 +162,7 @@ h1{
 
 .title-hero{
   color: #FFF;
-  font-family: "Labil Grotsek";
+  font-family: "Labil Grotesk";
   font-size: 67px;
   font-style: normal;
   font-weight: 600;
@@ -172,7 +172,7 @@ h1{
 
 .subtitle-hero{
   color: #FFF;
-  font-family: "Labil Grotsek";
+  font-family: "Labil Grotesk";
   font-size: 24px;
   font-style: normal;
   font-weight: 600;
@@ -181,7 +181,7 @@ h1{
 
 .type-hero{
   color: #FFF;
-  font-family: "Labil Grotsek";
+  font-family: "Labil Grotesk";
   font-size: 24px;
   font-style: normal;
   font-weight: 500;
@@ -191,7 +191,7 @@ h1{
 
 .body-text{
   color: #000;
-  font-family: "Labil Grotsek";
+  font-family: "Labil Grotesk";
   font-size: 16px;
   font-style: normal;
   font-weight: 200;
@@ -201,7 +201,7 @@ h1{
 
 .heading-text{
   color: #000;
-  font-family: "Labil Grotsek";
+  font-family: "Labil Grotesk";
   font-size: 18px;
   font-style: normal;
   font-weight: 600;
@@ -211,7 +211,7 @@ h1{
 
 .tag-text{
   color: white;
-  font-family: "Labil Grotsek";
+  font-family: "Labil Grotesk";
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -221,7 +221,7 @@ h1{
 
 .label-large{
   color: #FFF;
-  font-family: "Labil Grotsek";
+  font-family: "Labil Grotesk";
   font-size: 32px;
   font-style: normal;
   font-weight: 600;
