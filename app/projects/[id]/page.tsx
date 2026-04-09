@@ -209,22 +209,30 @@ export default async function ProjectPage({
             <FadeIn>
                 {project.gifs && project.gifs.length > 0 ? (
                     <div className="mt-8 flex flex-wrap gap-6 justify-center">
-                        {project.gifs.map((gif, index) => (
-                        <div key={index} className="flex-1 min-w-[280px] max-w-[20vw] overflow-hidden rounded-lg">
-                        <img
+                    {project.gifs.map((gif, index) => {
+                        const isLarge = gif.toLowerCase().includes("large");
+                        return (
+                        <div
+                            key={index}
+                            className={`flex-1 min-w-[280px] max-w-[20vw] overflow-hidden rounded-lg ${
+                            isLarge ? "md:min-w-[800px]" : "md:min-w-[300px]"
+                            }`}
+                        >
+                            <img
                             src={gif}
                             draggable={false}
                             alt={`${project.title} — project gif`}
                             className="h-auto w-full scale-[1.02]"
-                        />
+                            />
                         </div>
-                        ))}
+                        );
+                    })}
                     </div>
                 ) : null}
             </FadeIn>
 
             <FadeIn>
-                <div className="mt-8 flex flex-col gap-8 md:flex-row md:items-end md:gap-10">
+                <div className="mt-15 flex flex-col gap-8 md:flex-row md:justify-end md:items-start md:gap-10">
                     {project.img3 ? (
                             <div className="min-w-0 flex-1">
                             {project.img3.startsWith("/") ? (
@@ -251,11 +259,9 @@ export default async function ProjectPage({
                         {"challenges" in project && project.challenges ? (
                         <div>
                             <h3 className="heading-text">Challenges</h3>
-                            <ul className="mt-2 list-disc list-inside body-text">
-                            {project.challenges.map((challenge, index) => (
-                                <li key={index} className="body-text">{challenge}</li>
-                            ))}
-                            </ul>
+                            <p className="mt-2 body-text">
+                                {project.challenges}
+                            </p>
                         </div>
                         ) : null}
 

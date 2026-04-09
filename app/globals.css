@@ -141,6 +141,17 @@ body {
 
 }
 
+.quote-body-text{
+  color: #000;
+  font-family: "Labil Grotesk";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 200;
+  line-height: 140%; /* 15.4px */
+  letter-spacing: -0.11px;
+
+}
+
 h1{
   color: white;
   font-family: "Helvetica Neue";

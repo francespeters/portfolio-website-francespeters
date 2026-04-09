@@ -32,11 +32,7 @@
     "screensImg": "/images/CourseWireframes.png",
     "img2": "/images/course2.png",
     "solution": "Our prototype, CourseConnect, allowed students to navigate courses, view classmate profiles, participate in forums, send messages, and join study groups. Personalization features and a familiarly structured interface allows for students to identify peers with shared interests and form connections. Usability testing confirmed that students could successfully engage with the app, join study groups, and message classmates, helping bridge the gap between classroom recognition and real interaction.",
-    "challenges":[
-      "Certain icons (ex. study group book icon) initially caused confusion → we added labels under icons.",
-      "Early ideation initially focused too much on campus-based activities, limiting creative exploration.",
-      "Usability testing emphasized feature functionality over emotional experience."
-    ],
+    "challenges":"During early testing, certain icons—such as the study group book icon—caused confusion, leading us to introduce clearer labeling. Our initial ideation also focused too heavily on campus-based activities, which limited creative exploration before we expanded our scope. Additionally, usability testing revealed that we prioritized functional features over the emotional experience, prompting us to better align the design with our goal of fostering meaningful social connection.",
     "impact": "Course Connect provided a structured, personalized way for students to connect with classmates, making it easier to form study groups and friendships while also offering a centralized class chat platform. By reducing social friction, CourseConnect aims to help increase student engagement and support a stronger sense of belonging on campus.",
     "takeaways": "I learned the importance of designing for emotional experience, not just usability and aesthetics, particularly when addressing social connection. Iterative testing, clear heuristics, and personalization were critical in creating interfaces that were both effective and engaging, while respecting user privacy and preferences."
   },
@@ -72,12 +68,7 @@
     "img2": "/images/course2.png",
     "screensImg": "/images/nextscreenimgs.png",
     "solution": "NextStop AR allows users to hold up their phones and follow AR arrows overlaid onto the real-world station environment, guiding them step-by-step to their train or destination. The solution addressed unclear signage by replacing ambiguity with direct visual arrows, complex layouts by providing real-time directional guidance, language barriers by relying primarily on universal visual cues, and accessibility concerns by considering alternative routing and clear, high-contrast visuals. By merging physical space with digital wayfinding, the app reduced cognitive load and improved clarity for both tourists and regular commuters navigating unfamiliar lines.",
-    "challenges":[
-      "Limited timeline required us to rely on secondary research rather than in-depth user interviews.",
-      "Early sketches explored more traditional 2D navigation solutions, but we determined they did not sufficiently differentiate from existing apps.",
-      "We iterated on color choices to balance innovation with clarity and accessibility.",
-      "We identified concerns with distracted navigation within potentially dangerous environment. "
-    ],
+    "challenges":"Due to a limited timeline, we relied on secondary research rather than conducting in-depth user interviews, which constrained the depth of our insights. Early concepts explored more traditional 2D navigation patterns, but these lacked differentiation from existing solutions and pushed us toward AR. We also iterated extensively on color choices to balance clarity, accessibility, and innovation, while addressing concerns around user safety and distraction in a fast-paced transit environment.",
     "impact": "The prototype demonstrated how AR could modernize transit navigation and improve accessibility within Boston T stations. By addressing navigation frustrations, the concept showed potential to enhance rider confidence, reduce confusion, and create a more tourist-friendly transit experience.",
     "takeaways": "This project strengthened my ability to identify gaps in an existing product landscape and propose innovative, emerging-technology solutions. I learned the importance of clear onboarding when introducing unfamiliar technology and how strong visual hierarchy and accessibility decisions can reduce cognitive load in high-stress environments. It also reinforced how emerging tools like AR can solve real usability problems and not just serve as a novelty."
 
@@ -98,28 +89,24 @@
   "cover": "/images/lumaSrc.png",
   "imageSrc": "/images/lumaSrc.png",
   "gifs": [
-    "/images/luma1.gif",
-    "/images/luma2.gif"
+    "/images/Part1Lumalarge.gif",
+    "/images/part2Lumalarge.gif"
   ],
-  "diagram": "/images/lumawireframes.png",
-  "img3": "/images/lumawireframes.png",
+  "diagram": "/images/lumamap.png",
+  "img3": "/images/Lumaposter.png",
   "research": [
     "I conducted secondary research to understand barriers to sustainable consumption, exploring topics such as the limitations of recycling systems, rising fossil fuel dependence, increasing energy demand, and the widespread feeling of individual helplessness in addressing climate change.",
     "To better understand the current product landscape, I analyzed existing household energy tracking tools such as Sense and Emporia. These platforms often prioritize cost reduction over sustainability, present overly complex data visualizations, and lack features that encourage long-term behavioral change or habit formation.",
     "User insights revealed a desire for motivation and accountability, which inspired the inclusion of a community-driven gamification feature. Based on these findings, I brainstormed 10 concept directions and synthesized key opportunities around engagement, personalization, and reducing cognitive overload."
   ],
   "quotes": [
-    "“It feels like no matter what I do, it doesn’t really make a difference.”",
-    "“Most apps just show numbers—I don’t know what I’m supposed to do with that.”"
+    "“I also think gamifying things is very motivating. So if you are competing against other people in your community for a better, a better energy score meaning lower energy score, and you're winning, there's something very enticing about that.”",
+    "“I mean, it's hard to watch dollar signs just being, you know, going out the door and just be like, oh, that doesn't matter.”"
   ],
   "screensImg": "/images/lumaWireframes.png",
   "img2": "/images/lumawireframes.png",
   "solution": "Luma is a wall-mounted tablet designed to integrate directly into the home environment, making sustainable decision-making visible and unavoidable within daily routines—similar to how users interact with a thermostat. Unlike mobile apps that can be easily ignored, Luma creates a persistent touchpoint for awareness and action. The system translates complex household consumption data into clear, actionable insights while encouraging sustainable habits through personalized recommendations and feedback loops. \n\nA key differentiator is Luma’s community page, which incorporates gamification elements inspired by user interviews. Users can engage with others, track progress, and stay motivated through shared goals and light competition, reinforcing long-term behavior change.\n\nLuma also offers deep personalization. Users can tailor the interface based on their priorities—whether focused on budgeting or sustainability—with dynamic language and widgets that adapt accordingly. Customizable dashboards allow users to control the level of data displayed, reducing cognitive overload while maintaining flexibility. A companion mobile pairing feature extends the experience by delivering notifications and updates directly to the user’s phone.",
-  "challenges": [
-    "Balancing detailed data with clarity → simplified visual hierarchy and customizable widgets to reduce cognitive overload.",
-    "Designing for sustained engagement → introduced gamification and community features to reinforce motivation over time.",
-    "Bridging physical and digital interaction → developed a wall-mounted system that integrates seamlessly into daily routines while supporting mobile notifications."
-  ],
+  "challenges": "Designing Luma required balancing complex data with clarity, which led to simplifying the visual hierarchy and introducing customizable widgets to reduce cognitive overload. Creating sustained engagement beyond passive tracking was another challenge, addressed through gamification and community-driven features. Additionally, bridging the gap between physical and digital interaction required rethinking the form factor, resulting in a wall-mounted system that integrates seamlessly into daily routines while extending functionality through mobile notifications.",
   "impact": "Luma introduces a more human-centered approach to sustainable consumption by combining visibility, personalization, and motivation. By embedding the experience into the physical home environment and reinforcing it through community engagement and mobile touchpoints, the concept encourages consistent interaction and stronger habit formation. This approach empowers users to feel a greater sense of agency in reducing their environmental impact.",
   "takeaways": "This project reinforced the importance of designing for behavior change, not just information delivery. I learned how integrating products into existing routines, leveraging social motivation through gamification, and offering meaningful personalization can significantly increase engagement. Simplifying complex systems while maintaining flexibility was critical in creating an experience that feels both actionable and empowering."
   },
@@ -142,11 +129,7 @@
     "img3": "/images/ad_p.jpg",
     "screensImg": "/images/packaging_p.jpg",
     "solution": "Petrichor is a brand that embodies the idea of eco-friendly products as it is continuing the rain cycle by filtering rainwater and making it safe to drink. The name Petrichor refers to the pleasant, earthy scent produced when rain falls on dry soil, symbolizing renewal and freshness. As a brand, Petrichor is dedicated to creating sustainable, environmentally conscious water beverages that not only provide everyday refreshment but also promote a deeper connection with the natural world. In order to enjoy the smell of petrichor, you have to be outside in nature, and that is the feeling I wanted to evoke with this brand. From glass, reusable packaging to ethically sourced ingredients, Petrichor aims to inspire consumers to embrace a lifestyle that values and protects the environment.",
-    "challenges":[
-      "Rainwater consumption is not yet feasible due to of purification limitations.",
-      "Balancing poetic branding with credibility required attention to visual complexity.",
-      "Ensuring the minimal logo felt intentional rather than under-designed required thoughtful typographic refinement."
-    ],
+    "challenges":"One key challenge was the current infeasibility of large-scale rainwater consumption due to purification limitations, requiring the concept to remain speculative. Balancing poetic, nature-driven branding with credibility also required careful control of visual complexity. Additionally, ensuring the minimal logo felt intentional rather than under-designed involved thoughtful typographic refinement and attention to detail.",
     "impact":"Petrichor’s touchpoints include the logo, packaging, labels, and advertisements. Each touchpoint was crafted to reflect the brand's commitment to sustainability and its connection to nature.The logo features a minimalistic design, letting the Adobe Monarcha typeface do the talking. The typeface appears rhythmic, like rain, and feels even a bit poetic. The packaging is made from glass, a sustainable material that can be reused and recycled while the shape itself resembles a water droplet, reinforcing the brand's connection to water and nature. The labels are designed to be simple, reflecting the purity of the product, while also incorporating elements like the definitions of petrichor."
 
   }
