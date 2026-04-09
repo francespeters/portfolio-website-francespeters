@@ -24,7 +24,7 @@ const Header = () => {
               href="/home"
               className="text-xl font-semibold !text-brand-paper no-underline shrink-0"
             >
-              <img src="/images/myLogo.png" alt="Logo" className="h-24 w-auto" />
+              <img src="/images/LogoBlack.png" alt="Logo" className="h-24 w-auto" />
 
             </Link>
           )}

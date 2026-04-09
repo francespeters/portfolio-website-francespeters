@@ -23,11 +23,14 @@
   font-style: normal;
   font-display: swap;
 }
-
+/* --black-primary: #121212;
+  --white-primary: #f1f1f1;
+  --grey-primary: #2c2c2c; */
 
 :root {
-  --black-primary: #121212;
-  --white-primary: #f1f1f1;
+  --black-primary: #fff;
+  --bg-primary: #f1f1f1;
+  --white-primary: #121212;
   --grey-primary: #2c2c2c;
 }
 
@@ -40,6 +43,7 @@
  */
 @theme inline {
   --color-brand-ink: var(--black-primary);
+  --color-brand-bg-primary: var(--bg-primary);
   --color-brand-paper: var(--white-primary);
   --color-brand-surface: var(--grey-primary);
   /* Aliases if you need longer names elsewhere */
@@ -128,10 +132,19 @@ body {
   gap: 1rem;
 }
 
+.button-styles{
+  box-shadow: 0 4px 100px 0 rgba(0, 0, 0, 0.25);
+  color:#121212;
+  font-family: "Labil Grotesk";
+  font-size: 16px;
+  background-color: #ffff;
+
+}
+
 
 
 .about-body-text{
-  color: #ffffff;
+  color: #121212;
   font-family: "Labil Grotesk";
   font-size: 16px;
   font-style: normal;
@@ -153,7 +166,7 @@ body {
 }
 
 h1{
-  color: white;
+  color: #121212;
   font-family: "Helvetica Neue";
   font-weight: 400;
   letter-spacing: -0.11px;
@@ -161,7 +174,7 @@ h1{
 }
 
 .title-hero{
-  color: #FFF;
+  color: #121212;
   font-family: "Labil Grotesk";
   font-size: 67px;
   font-style: normal;
@@ -171,7 +184,7 @@ h1{
 }
 
 .subtitle-hero{
-  color: #FFF;
+  color: #121212;
   font-family: "Labil Grotesk";
   font-size: 24px;
   font-style: normal;
@@ -180,7 +193,7 @@ h1{
 }
 
 .type-hero{
-  color: #FFF;
+  color: #121212;
   font-family: "Labil Grotesk";
   font-size: 24px;
   font-style: normal;
@@ -210,7 +223,7 @@ h1{
 }
 
 .tag-text{
-  color: white;
+  color: #121212;
   font-family: "Labil Grotesk";
   font-size: 18px;
   font-style: normal;
@@ -220,7 +233,7 @@ h1{
 }
 
 .label-large{
-  color: #FFF;
+  color: #121212;
   font-family: "Labil Grotesk";
   font-size: 32px;
   font-style: normal;

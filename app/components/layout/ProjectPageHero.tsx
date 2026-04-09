@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function ProjectPageHero({ type, title, subtitle, date, coverImg }: { type?: string; title: string; subtitle?: string; date: string; coverImg?: string }) {
   return (
-    <div className="flex flex-col lg:flex-row items-center bg-[var(--black-primary)] py-8 lg:px-20">
+    <div className="flex flex-col lg:flex-row items-center bg-brand-bg-primary py-8 lg:px-20">
 
   <div className="flex flex-col px-8 py-8 lg:flex-1 lg:min-w-[280px] fadeInUp-animation ">
     <p className="type-hero">{type}</p>

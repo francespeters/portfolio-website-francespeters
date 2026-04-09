@@ -34,7 +34,7 @@ function PortfolioItem({ project }: { project: PortfolioProject }) {
     >
       <Link
         href={project.href}
-        className="group block overflow-hidden border-neutral-200 bg-brand-paper text-inherit shadow-sm transition-[box-shadow,transform] hover:-translate-y-0.5 hover:shadow-md"
+        className="group block overflow-hidden border-neutral-200 bg-brand-bg-primary text-inherit shadow-sm transition-[box-shadow,transform] hover:-translate-y-0.5 hover:shadow-md"
       >
         <div
           className={`relative w-full ${
