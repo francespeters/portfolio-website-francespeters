@@ -10,14 +10,14 @@
 
 @font-face {
   font-family: "Labil Grotsek";
-  src: url("/fonts/LabilGrosek-Medium.otf") format("opentype");
+  src: url("/fonts/LabilGrotsek-Medium.otf") format("opentype");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Labil Grosek";
+  font-family: "Labil Grotsek";
   src: url("/fonts/LabilGrotsek-Bold.otf") format("opentype");
   font-weight: 700;
   font-style: normal;
