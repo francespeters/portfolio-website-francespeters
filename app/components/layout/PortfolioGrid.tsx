@@ -66,7 +66,7 @@ function PortfolioItem({ project }: { project: PortfolioProject }) {
         </div>
       </Link>
       <footer className="px-2 pt-3 dark:border-neutral-800">
-        <ItemTag text={project.title} date={project.date} />
+        <ItemTag text={project.title} date={project.date} tags={project.tags} />
       </footer>
     </li>
   );

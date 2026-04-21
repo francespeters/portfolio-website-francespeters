@@ -13,8 +13,8 @@ function About() {
       <section aria-label="Introduction" className="mb-10  fadeInUp-animation">
         <div className="flex flex-col-reverse sm:flex-row items-center gap-8">
           <p className="about-body-text sm:w-2/5">
-            Designer passionate about solving complex and ambiguous problems
-            through user-centered design and creative solutions.
+            Detail-oriented designer with a background in Computer Science and UX, bringing structured, analytical thinking to complex problems. Experienced in leading user research-driven design work, with the technical fluency to evaluate feasibility and collaborate effectively across design and engineering.
+
           </p>
           <img
             className="w-40 h-40 sm:w-100 sm:h-70 rounded-sm object-cover"
@@ -44,6 +44,13 @@ function About() {
         <div>
           <h2 className="label-large pb-3">Experience</h2>
           <div className="space-y-10">
+            <FadeIn>
+            <div>
+              <p className="tag-text">SCOUT – Northeastern&apos;s Student Design Collective</p>
+              <p className="about-body-text ">Project Lead & UX/UI Designer for TwoCents</p>
+              <p className="about-body-text ">Jan. 2025 – Present</p>
+            </div>
+            </FadeIn>
 
             <FadeIn>
             <div>
@@ -56,7 +63,7 @@ function About() {
 
             <div>
               <p className="tag-text">SCOUT – Northeastern&apos;s Student Design Collective</p>
-              <p className="about-body-text ">Lead UX/UI Designer</p>
+              <p className="about-body-text ">Lead UX/UI Designer for The Student Kitchen</p>
               <p className="about-body-text ">Sept. 2025 – Jan. 2026</p>
             </div>
             </FadeIn>
@@ -66,14 +73,6 @@ function About() {
               <p className="tag-text">MOHAI</p>
               <p className="about-body-text">UX/UI Designer</p>
               <p className="about-body-text">June 2024 – Aug. 2024</p>
-            </div>
-            </FadeIn>
-            <FadeIn>
-
-            <div>
-              <p className="tag-text">Row 34</p>
-              <p className="about-body-text">Host</p>
-              <p className="about-body-text">Aug. 2024 – Jan. 2025</p>
             </div>
             </FadeIn>
 
