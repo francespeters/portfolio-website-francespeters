@@ -3,6 +3,7 @@ import "./globals.css";
 
 import Header from "./components/layout/Header";
 import CursorProvider from "./components/providers/CursorProvider";
+import Footer from "./components/layout/Footer";
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
@@ -13,7 +14,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <Header />
           </div>
           <main>{children}</main>
+          <div>
+            <Footer />
+          </div>
         </CursorProvider>
+
       </body>
     </html>
   );

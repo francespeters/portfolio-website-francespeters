@@ -9,14 +9,13 @@ const Header = () => {
   const isProjectPage = pathname.startsWith("/projects/");
 
   return (
-    <div className="w-full bg-brand-ink">
-      <header className="mx-auto max-w-[1400px] px-6">
+<div className={`w-full ${isProjectPage ? "bg-brand-bg-primary" : "bg-brand-ink"}`}>
+        <header className="mx-auto max-w-[1400px] px-6">
         <div className="flex w-full items-center gap-[50vw] sm:gap-[45vw] sm:justify-start md:justify-between lg:justify-between xl:justify-between pt-1">
           {isProjectPage ? (
             <Link
               href="/home"
-              className="mt-3 inline-flex h-20 w-20 items-center justify-center rounded-full text-sm font-semibold !text-brand-paper no-underline transition-colors "
-            >
+className="mt-3 inline-flex h-20 w-20 items-center justify-center rounded-full text-sm font-semibold !text-brand-paper no-underline transition-all hover:text-base"            >
               Back
             </Link>
           ) : (

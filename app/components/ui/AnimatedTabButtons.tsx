@@ -23,14 +23,14 @@ export default function AnimatedTabButtons({ className = "" }: AnimatedTabButton
   const isAboutActive = activePath === "/about";
   const isPortfolioActive = activePath === "/home";
 
-  const radiusPx = 40;
+  const radiusPx = 37;
   const animationMs = 500;
   const activeScale = 1.16;
 
   // UPDATED: added isHovered parameter
   const orbitTransform = (angleDeg: number, isActive: boolean, isHovered: boolean) => {
   const scale = isActive ? activeScale : isHovered ? 1.08 : 1;
-  const yOffset = isActive ? 0 : 30; // px — adjust this value to taste
+  const yOffset = isActive ? 0 : 37; // px — adjust this value to taste
   return `translate(-50%, -50%) rotate(${angleDeg}deg) translate(${radiusPx}px) rotate(${-angleDeg}deg) scale(${scale}) translateY(${yOffset}px)`;
 };
 
