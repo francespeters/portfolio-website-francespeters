@@ -11,7 +11,7 @@ function About() {
 
       {/* Hero / Intro */}
       <section aria-label="Introduction" className="mb-10  fadeInUp-animation">
-        <div className="flex flex-col-reverse sm:flex-row items-center gap-8">
+        <div className="flex flex-col-reverse sm:flex-row items-center md:items-start gap-8">
           <p className="about-body-text sm:w-2/5">
             Detail-oriented designer with a background in Computer Science and UX, bringing structured, analytical thinking to complex problems. Experienced in leading user research-driven design work, with the technical fluency to evaluate feasibility and collaborate effectively across design and engineering.
 
