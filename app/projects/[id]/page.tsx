@@ -42,10 +42,29 @@ export default async function ProjectPage({
         <ProjectMainCursorZone hideThresholdPx={680}>
         <div className="mx-auto max-w-[1400px] px-10 py-6 md:px-20 md:py-10 lg:px-50 lg:py-16">
             <FadeIn>
+                <div className="mt-2 flex flex-col gap-8 md:flex-row md:justify-end md:items-start md:gap-10">
+                    {project.video ? (
+                            <div className="min-w-0 flex-1">
+                            
+                                <video
+                                    src={project.video}
+                                    autoPlay
+                                    loop
+                                    muted
+                                    playsInline
+                                    controls      // remove if you don't want controls
+                                />
+                            
+                            </div>
+                    ) : null}     
+            </div>                
+            </FadeIn>
+
+            <FadeIn>
                 {"problem" in project && project.problem ? (
-                    <div>
+                    <div className="mt-8">
                         <h3 className="heading-text">Problem</h3>
-                        <p className="mt-2 body-text">
+                        <p className="mt-8 body-text">
                         {project.problem}
                         </p>
                     </div>
@@ -274,11 +293,17 @@ export default async function ProjectPage({
                             </div>
                         ) : null}
                     </div>
-                <BackToTop />
 
                     
             </div>                
             </FadeIn>
+
+            
+            <div className="">
+                    <BackToTop />
+
+
+                </div>
 
 
 

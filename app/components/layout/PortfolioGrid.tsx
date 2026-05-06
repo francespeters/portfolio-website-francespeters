@@ -2,23 +2,27 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import { useState } from "react";
 import { useSetCursorMode } from "../providers/CursorProvider";
 import ItemTag from "../ui/ItemTag";
 import Projects from "../../database/projects.json";
 import { useInView } from "@/app/hooks/useInView";
 
+type FilterTag = "All Work" | "UX Design" | "Graphic Design" | "Branding" | "Animation";
 
-type PortfolioGridProps = {
-  projects?: PortfolioProject[];
-  className?: string;
-};
-
+const FILTER_TAGS: FilterTag[] = [
+  "All Work",
+  "UX Design",
+  "Graphic Design",
+  "Branding",
+  "Animation",
+];
 
 export type PortfolioProject = (typeof Projects)[number];
 
 function PortfolioItem({ project }: { project: PortfolioProject }) {
   const { ref, inView } = useInView<HTMLLIElement>();
-  const setCursorMode = useSetCursorMode(); // <-- use the context hook directly
+  const setCursorMode = useSetCursorMode();
 
   const imageAlt =
     "imageAlt" in project && typeof project.imageAlt === "string"
@@ -75,12 +79,44 @@ function PortfolioItem({ project }: { project: PortfolioProject }) {
 export default function PortfolioGrid({
   projects = Projects as PortfolioProject[],
   className = "",
-}: { projects?: PortfolioProject[]; className?: string }) {
+}: {
+  projects?: PortfolioProject[];
+  className?: string;
+}) {
+  const [activeFilter, setActiveFilter] = useState<FilterTag>("All Work");
+
+  const filteredProjects =
+    activeFilter === "All Work"
+      ? projects
+      : projects.filter(
+          (p) => Array.isArray(p.tags) && p.tags.includes(activeFilter)
+        );
+
   return (
-    <ul className={`columns-1 gap-4 p-0 sm:columns-2 ${className} list-none`}>
-      {projects.map((project) => (
-        <PortfolioItem key={project.id} project={project} />
-      ))}
-    </ul>
+    <div>
+      {/* Filter Bar */}
+      <div className="mb-8 flex flex-wrap gap-2">
+        {FILTER_TAGS.map((tag) => (
+          <button
+            key={tag}
+            onClick={() => setActiveFilter(tag)}
+            className={`px-4 py-1.5 !rounded-sm text-sm transition-all duration-200 cursor-pointer
+              ${
+                activeFilter === tag
+                  ? "bg-black text-white"
+                  : "border border-black text-black hover:shadow-md hover:scale-105 transition-transform duration-200 hover:!border-neutral-600"              }`}
+          >
+            {tag}
+          </button>
+        ))}
+      </div>
+
+      {/* Grid */}
+      <ul className={`columns-1 gap-4 p-0 sm:columns-2 ${className} list-none`}>
+        {filteredProjects.map((project) => (
+          <PortfolioItem key={project.id} project={project} />
+        ))}
+      </ul>
+    </div>
   );
 }

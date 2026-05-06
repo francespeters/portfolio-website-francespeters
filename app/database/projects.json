@@ -83,7 +83,7 @@
   "type": "Case Study",
   "tagText": "UX Research | UX Design",
   "date": "2024",
-  "tags": ["UX Research", "UX Design", "Graphic Design"],
+  "tags": ["UX Research", "UX Design", "Graphic Design", "Animation"],
   "aspect": "aspect-[4/3]",
   "problem": "The United Nations Sustainable Development Goal 12 (SDG 12) aims to ensure responsible consumption and production by 2030, emphasizing waste reduction and increased sustainability awareness. Despite growing concern around climate change, individuals often feel overwhelmed or unsure how to meaningfully adjust their daily consumption habits. Existing solutions tend to focus heavily on cost savings or data tracking, rather than fostering sustainable behaviors. This project explores how design can reduce waste and increase sustainability awareness by supporting more intentional, everyday consumption practices.",
   "hypothesis": "If individuals are provided with an intuitive, integrated system that translates household consumption data into actionable insights and habit-building opportunities, then they will be more likely to adopt sustainable behaviors and reduce waste over time by lowering cognitive barriers and increasing awareness.",
@@ -96,6 +96,7 @@
     "/images/part2Lumalarge.gif"
   ],
   "screensImg": "/images/lumawireframes.png",
+  "video": "/images/Luma_video.mp4",
   "diagram": "/images/lumamap.png",
   "img3": "/images/Lumaposter.png",
   "research": [
@@ -119,7 +120,7 @@
     "href": "/projects/petrichor",
     "tagText": "Product design",
     "date": "2024",
-    "tags": ["Brand Design", "Graphic Design"],
+    "tags": ["Branding", "Graphic Design"],
     "type":"Project",
     "subtitle":"Beverage Branding & Packaging Design",
     "aspect":"aspect-[4/3]",
