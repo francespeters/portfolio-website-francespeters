@@ -2,19 +2,19 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useSetCursorMode } from "../providers/CursorProvider";
 import ItemTag from "../ui/ItemTag";
 import Projects from "../../database/projects.json";
 import { useInView } from "@/app/hooks/useInView";
 
-type FilterTag = "All Work" | "UX Design" | "Graphic Design" | "Branding" | "Animation";
+type FilterTag = "All Work" | "UX Design" | "Graphic Design" | "Branding & Marketing" | "Animation";
 
 const FILTER_TAGS: FilterTag[] = [
   "All Work",
   "UX Design",
   "Graphic Design",
-  "Branding",
+  "Branding & Marketing",
   "Animation",
 ];
 
@@ -84,6 +84,25 @@ export default function PortfolioGrid({
   className?: string;
 }) {
   const [activeFilter, setActiveFilter] = useState<FilterTag>("All Work");
+  const [indicatorStyle, setIndicatorStyle] = useState({ left: 0, width: 0 });
+  const buttonRefs = useRef<(HTMLButtonElement | null)[]>([]);
+  const barRef = useRef<HTMLDivElement>(null);
+
+  // Update indicator position whenever activeFilter changes
+  useEffect(() => {
+    const idx = FILTER_TAGS.indexOf(activeFilter);
+    const btn = buttonRefs.current[idx];
+    const bar = barRef.current;
+    if (!btn || !bar) return;
+
+    const barRect = bar.getBoundingClientRect();
+    const btnRect = btn.getBoundingClientRect();
+
+    setIndicatorStyle({
+      left: btnRect.left - barRect.left,
+      width: btnRect.width,
+    });
+  }, [activeFilter]);
 
   const filteredProjects =
     activeFilter === "All Work"
@@ -92,24 +111,40 @@ export default function PortfolioGrid({
           (p) => Array.isArray(p.tags) && p.tags.includes(activeFilter)
         );
 
+  
+
   return (
     <div>
       {/* Filter Bar */}
-      <div className="mb-8 flex flex-wrap gap-2">
-        {FILTER_TAGS.map((tag) => (
-          <button
-            key={tag}
-            onClick={() => setActiveFilter(tag)}
-            className={`px-4 py-1.5 !rounded-sm text-sm transition-all duration-200 cursor-pointer
-              ${
-                activeFilter === tag
-                  ? "bg-black text-white"
-                  : "border border-black text-black hover:shadow-md hover:scale-105 transition-transform duration-200 hover:!border-neutral-600"              }`}
-          >
-            {tag}
-          </button>
-        ))}
-      </div>
+  <div ref={barRef} className="relative mb-8 flex flex-wrap gap-8 border-b border-[#e0e0e0]">
+    {FILTER_TAGS.map((tag, i) => (
+      <button
+        key={tag}
+        ref={(el) => { buttonRefs.current[i] = el; }}
+        onClick={() => setActiveFilter(tag)}
+        className="relative pb-3 cursor-pointer bg-transparent border-none p-0 transition-opacity duration-200 hover:opacity-50"
+        style={{
+          fontFamily: "Labil Grotesk",
+          fontSize: "16px",
+          fontWeight: activeFilter === tag ? 600 : 400,
+          color: "#121212",
+          marginBottom: "-1px",
+        }}
+      >
+        {tag}
+      </button>
+    ))}
+
+    {/* Single sliding indicator */}
+    <span
+      className="absolute bottom-0 h-[1.5px] bg-[#121212] rounded-sm"
+      style={{
+        left: indicatorStyle.left,
+        width: indicatorStyle.width,
+        transition: "left 0.25s ease, width 0.25s ease",
+      }}
+    />
+  </div>
 
       {/* Grid */}
       <ul className={`columns-1 gap-4 p-0 sm:columns-2 ${className} list-none`}>

@@ -1,9 +1,9 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./globals.css";
 
-import Header from "./components/layout/Header";
 import CursorProvider from "./components/providers/CursorProvider";
 import Footer from "./components/layout/Footer";
+import NewHeader from "./components/layout/NewHeader";
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
@@ -11,7 +11,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body>
         <CursorProvider>
           <div>
-            <Header />
+            <NewHeader />
           </div>
           <main>{children}</main>
           <div>

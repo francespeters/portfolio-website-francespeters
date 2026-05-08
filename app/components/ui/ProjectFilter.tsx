@@ -13,9 +13,9 @@ type Project = {
   cover?: string;
 };
 
-type Tag = "All Work" | "UX Design" | "Graphic Design" | "Branding" | "Animation";
+type Tag = "All Work" | "UX Design" | "Graphic Design" | "Branding & Marketing" | "Animation";
 
-const TAGS: Tag[] = ["All Work", "UX Design", "Graphic Design", "Branding", "Animation"];
+const TAGS: Tag[] = ["All Work", "UX Design", "Graphic Design", "Branding & Marketing", "Animation"];
 
 export default function ProjectFilter({ projects }: { projects: Project[] }) {
   const [active, setActive] = useState<Tag>("All Work");

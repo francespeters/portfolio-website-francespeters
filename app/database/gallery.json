@@ -1,0 +1,39 @@
+[
+  {
+    "id": "1",
+    "src": "/images/Lumaposter.png",
+    "title": "Luma Advertising Poster",
+    "process": "Started with a moodboard exploring earthy tones and organic forms, then moved into logotype exploration across 3 rounds of refinement.",
+    "tags": ["Branding & Marketing"]
+  },
+  {
+    "id": "2",
+    "src": "/images/packaging_p.jpg",
+    "title": "App Wireframes",
+    "process": "Low-fidelity sketches evolved into a component library. Ran 2 rounds of usability testing before moving to high fidelity.",
+    "tags": ["UX Design"]
+  },
+  {
+    "id": "3",
+    "src": "/images/petrichorImg.png",
+    "title": "Motion Concepts",
+    "process": "Explored transition metaphors in After Effects — settled on a liquid morph that matched the brand's fluid personality.",
+    "tags": ["Animation"]
+  },
+  {
+    "id": "4",
+    "src": "/images/ad_p.jpg",
+    "title": "Motion Concepts",
+    "process": "Explored transition metaphors in After Effects — settled on a liquid morph that matched the brand's fluid personality.",
+    "tags": ["Animation"]
+  },
+  {
+    "id": "5",
+    "src": "/images/Luma_video.mp4",
+    "title": "Motion Concepts",
+    "process": "Explored transition metaphors in After Effects — settled on a liquid morph that matched the brand's fluid personality.",
+    "tags": ["Animation"],
+    "type": "video" 
+
+  }
+]
