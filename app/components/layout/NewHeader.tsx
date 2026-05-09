@@ -9,7 +9,7 @@ const NewHeader = () => {
 
   return (
     <div className={`w-full ${isProjectPage ? "bg-brand-bg-primary" : "bg-brand-ink"}`}>
-      <header className="mx-auto max-w-[1400px] px-6 py-5">
+      <header className="mx-auto max-w-[1400px] px-6 py-4">
         <div className="flex w-full items-center justify-between">
 
           {/* Left — name or back button */}

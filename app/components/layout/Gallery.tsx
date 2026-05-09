@@ -11,6 +11,7 @@ export type GalleryItem = {
   process: string;
   tags?: string[];
   type?: "image" | "video"; // ← add this, defaults to image
+  maxHeight?: number;
 };
 
 interface GalleryProps {
@@ -20,6 +21,33 @@ interface GalleryProps {
 function GalleryCard({ item, index }: { item: GalleryItem; index: number }) {
   const [hovered, setHovered] = useState(false);
 
+  const media = item.type === "video" ? (
+    <video
+      src={item.src}
+      className="w-full block"
+      autoPlay
+      muted
+      loop
+      playsInline
+      style={{
+        transform: hovered ? "scale(1.04)" : "scale(1)",
+        filter: hovered ? "blur(3px) brightness(0.45)" : "blur(0px) brightness(1)",
+        transition: "filter 0.4s ease, transform 0.5s ease",
+      }}
+    />
+  ) : (
+    <img
+      src={item.src}
+      alt={item.alt ?? item.title}
+      className="w-full block"
+      style={{
+        transform: hovered ? "scale(1.04)" : "scale(1)",
+        filter: hovered ? "blur(3px) brightness(0.45)" : "blur(0px) brightness(1)",
+        transition: "filter 0.4s ease, transform 0.5s ease",
+      }}
+    />
+  );
+
   return (
     <div
       className="relative rounded-lg cursor-pointer overflow-hidden fadeInUp-animation"
@@ -27,35 +55,8 @@ function GalleryCard({ item, index }: { item: GalleryItem; index: number }) {
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
     >
-      {/* Image sizes the card — no cropping */}
-      {item.type === "video" ? (
-        <video
-            src={item.src}
-            className="w-full h-auto block"
-            autoPlay
-            muted
-            loop
-            playsInline
-            style={{
-            transform: hovered ? "scale(1.04)" : "scale(1)",
-            filter: hovered ? "blur(3px) brightness(0.45)" : "blur(0px) brightness(1)",
-            transition: "filter 0.4s ease, transform 0.5s ease",
-            }}
-        />
-        ) : (
-        <img
-            src={item.src}
-            alt={item.alt ?? item.title}
-            className="w-full h-auto block"
-            style={{
-            transform: hovered ? "scale(1.04)" : "scale(1)",
-            filter: hovered ? "blur(3px) brightness(0.45)" : "blur(0px) brightness(1)",
-            transition: "filter 0.4s ease, transform 0.5s ease",
-            }}
-        />
-        )}
+      {media}
 
-      {/* Dark gradient */}
       <div
         className="absolute inset-0 pointer-events-none"
         style={{
@@ -66,7 +67,6 @@ function GalleryCard({ item, index }: { item: GalleryItem; index: number }) {
         }}
       />
 
-      {/* Text overlay */}
       <div
         className="absolute bottom-0 left-0 right-0 p-5"
         style={{
@@ -97,12 +97,7 @@ function GalleryCard({ item, index }: { item: GalleryItem; index: number }) {
 
 export default function Gallery({ items }: GalleryProps) {
   return (
-    <div
-      style={{
-        columns: "2",
-        columnGap: "12px",
-      }}
-    >
+    <div className="columns-1 sm:columns-2 lg:columns-3 gap-3">
       {items.map((item, i) => (
         <div
           key={item.id}

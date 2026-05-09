@@ -3,35 +3,39 @@
     "id": "1",
     "src": "/images/Lumaposter.png",
     "title": "Luma Advertising Poster",
-    "process": "Started with a moodboard exploring earthy tones and organic forms, then moved into logotype exploration across 3 rounds of refinement.",
-    "tags": ["Branding & Marketing"]
+    "process": "Designed an adversiting poster for Luma, a household energy consumption data-tracker built for sustainable living. The illustration was created and edited using Figma.",
+    "tags": ["Branding & Marketing"],
+    "maxHeight": "700"
+
   },
   {
     "id": "2",
     "src": "/images/packaging_p.jpg",
-    "title": "App Wireframes",
-    "process": "Low-fidelity sketches evolved into a component library. Ran 2 rounds of usability testing before moving to high fidelity.",
-    "tags": ["UX Design"]
+    "title": "Petrichor Packaging Design",
+    "process": "Designed packaging for Petrichor, focusing on sustainable materials and a minimalist aesthetic. Used a combination of Illustrator and Photoshop for photo editing and mockup creation. Used Adobe Firefly to generate lifestyle imagery that showcased the product in natural settings, emphasizing its connection to nature.",
+    "tags": ["Packaging Design"]
   },
   {
     "id": "3",
     "src": "/images/petrichorImg.png",
     "title": "Motion Concepts",
-    "process": "Explored transition metaphors in After Effects — settled on a liquid morph that matched the brand's fluid personality.",
+    "process": ".",
     "tags": ["Animation"]
   },
   {
     "id": "4",
     "src": "/images/ad_p.jpg",
-    "title": "Motion Concepts",
-    "process": "Explored transition metaphors in After Effects — settled on a liquid morph that matched the brand's fluid personality.",
-    "tags": ["Animation"]
+    "title": "Petrichor Advertisement Poster",
+    "process": "Created a visually engaging poster for Petrichor using a combination of Illustrator and Photoshop.",
+    "tags": ["Branding & Marketing"],
+    "maxHeight": "700"
+
   },
   {
     "id": "5",
     "src": "/images/Luma_video.mp4",
-    "title": "Motion Concepts",
-    "process": "Explored transition metaphors in After Effects — settled on a liquid morph that matched the brand's fluid personality.",
+    "title": "Luma Advertising Video",
+    "process": "Explored animation in Canva with fluid transitions that matched the brand's modern personality.",
     "tags": ["Animation"],
     "type": "video" 
 
