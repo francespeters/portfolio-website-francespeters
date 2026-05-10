@@ -10,26 +10,27 @@
   },
   {
     "id": "2",
-    "src": "/images/packaging_p.jpg",
+    "src": "/images/GlassBottle.png",
     "title": "Petrichor Packaging Design",
     "process": "Designed packaging for Petrichor, focusing on sustainable materials and a minimalist aesthetic. Used a combination of Illustrator and Photoshop for photo editing and mockup creation. Used Adobe Firefly to generate lifestyle imagery that showcased the product in natural settings, emphasizing its connection to nature.",
     "tags": ["Packaging Design"]
   },
+  
   {
     "id": "3",
-    "src": "/images/petrichorImg.png",
-    "title": "Motion Concepts",
-    "process": ".",
-    "tags": ["Animation"]
-  },
-  {
-    "id": "4",
-    "src": "/images/ad_p.jpg",
+    "src": "/images/pet_ad.png",
     "title": "Petrichor Advertisement Poster",
     "process": "Created a visually engaging poster for Petrichor using a combination of Illustrator and Photoshop.",
     "tags": ["Branding & Marketing"],
     "maxHeight": "700"
 
+  },
+  {
+    "id": "4",
+    "src": "/images/pet_screen.png",
+    "title": "Petrichor Ecommerce Landing Page",
+    "process": "Designed the landing page for Petrichor's ecommerce touchpoint using Figma and Photoshop.",
+    "tags": ["UX & Marketing"]
   },
   {
     "id": "5",

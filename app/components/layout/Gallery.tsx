@@ -97,7 +97,7 @@ function GalleryCard({ item, index }: { item: GalleryItem; index: number }) {
 
 export default function Gallery({ items }: GalleryProps) {
   return (
-    <div className="columns-1 sm:columns-2 lg:columns-3 gap-3">
+    <div className="columns-1 sm:columns-2 lg:columns-2 gap-10">
       {items.map((item, i) => (
         <div
           key={item.id}
