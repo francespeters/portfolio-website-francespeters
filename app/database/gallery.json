@@ -1,14 +1,5 @@
 [
   {
-    "id": "1",
-    "src": "/images/Lumaposter.png",
-    "title": "Luma Advertising Poster",
-    "process": "Designed an adversiting poster for Luma, a household energy consumption data-tracker built for sustainable living. The illustration was created and edited using Figma.",
-    "tags": ["Branding & Marketing"],
-    "maxHeight": "700"
-
-  },
-  {
     "id": "2",
     "src": "/images/GlassBottle.png",
     "title": "Petrichor Packaging Design",
@@ -34,6 +25,22 @@
   },
   {
     "id": "5",
+    "src": "/images/Pet_insta.png",
+    "title": "Petrichor Instagram Posts",
+    "process": "Created an engaging Instagram posts for Petrichor using a combination of Illustrator, Photoshop, and Figma.",
+    "tags": ["Social Media Marketing"]
+  },
+  {
+    "id": "1",
+    "src": "/images/Lumaposter.png",
+    "title": "Luma Advertising Poster",
+    "process": "Designed an adversiting poster for Luma, a household energy consumption data-tracker built for sustainable living. The illustration was created and edited using Figma.",
+    "tags": ["Branding & Marketing"],
+    "maxHeight": "700"
+
+  },
+  {
+    "id": "6",
     "src": "/images/Luma_video.mp4",
     "title": "Luma Advertising Video",
     "process": "Explored animation in Canva with fluid transitions that matched the brand's modern personality.",
