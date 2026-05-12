@@ -47,8 +47,15 @@ function About() {
             <FadeIn>
             <div>
               <p className="tag-text">SCOUT – Northeastern&apos;s Student Design Collective</p>
+              <p className="about-body-text ">Associate Director of Design</p>
+              <p className="about-body-text ">May. 2026 – Present</p>
+            </div>
+            </FadeIn>
+            <FadeIn>
+            <div>
+              <p className="tag-text">SCOUT – Northeastern&apos;s Student Design Collective</p>
               <p className="about-body-text ">Project Lead & UX/UI Designer for TwoCents</p>
-              <p className="about-body-text ">Jan. 2025 – Present</p>
+              <p className="about-body-text ">Jan. 2026 – Present</p>
             </div>
             </FadeIn>
 

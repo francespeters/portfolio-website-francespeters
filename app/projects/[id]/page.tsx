@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import Image from "next/image";
 import { notFound } from "next/navigation";
 import Projects from "../../database/projects.json";
@@ -215,6 +216,55 @@ export default async function ProjectPage({
                           <div className="w-full max-w-4xl">
                             <img
                                 src={project.screensImg}
+                                draggable={false}
+                                alt={`${project.title} — project diagram`}
+                                className="h-auto w-full "
+                            />
+                        </div>
+                    )}
+                </div>
+            ):null}
+            </FadeIn>
+
+            <FadeIn>
+            {"adimg1" in project && project.adimg1 ? (
+                <div className="mt-8 flex flex-wrap gap-6 justify-center">
+                    {project.adimg1 && (
+                          <div className="w-full max-w-4xl">
+                            <img
+                                src={project.adimg1}
+                                draggable={false}
+                                alt={`${project.title} — project diagram`}
+                                className="h-auto w-full "
+                            />
+                        </div>
+                    )}
+                </div>
+            ):null}
+            </FadeIn>
+            <FadeIn>
+            {"adimg2" in project && project.adimg2 ? (
+                <div className="mt-8 flex flex-wrap gap-6 justify-center">
+                    {project.adimg2 && (
+                          <div className="w-full max-w-4xl">
+                            <img
+                                src={project.adimg2}
+                                draggable={false}
+                                alt={`${project.title} — project diagram`}
+                                className="h-auto w-full "
+                            />
+                        </div>
+                    )}
+                </div>
+            ):null}
+            </FadeIn>
+            <FadeIn>
+            {"adimg3" in project && project.adimg3 ? (
+                <div className="mt-8 flex flex-wrap gap-6 justify-center">
+                    {project.adimg3 && (
+                          <div className="w-full max-w-4xl">
+                            <img
+                                src={project.adimg3}
                                 draggable={false}
                                 alt={`${project.title} — project diagram`}
                                 className="h-auto w-full "

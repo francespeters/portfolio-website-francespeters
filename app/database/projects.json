@@ -1,4 +1,32 @@
 [
+  {
+    "id": "petrichor",
+    "title": "Petrichor",
+    "href": "/projects/petrichor",
+    "tagText": "Product design",
+    "date": "2024",
+    "tags": ["Branding & Marketing", "Graphic Design"],
+    "type":"Project",
+    "subtitle":"Beverage Branding & Packaging Design",
+    "aspect":"aspect-[4/3]",
+    "problem":"This was a project I worked on for my Identity and Brand Design course. Our task was to observe beverages in the world and then build our own brand. I found it interesting how water, something that is a daily necessity, could come in so many different forms with their own individual brand tones and personality. I took inspiration from water brands like Voss, but wanted to create a brand that felt more connected to nature and the environment. My goal was to create a brand that not only provided a refreshing beverage but also inspired consumers to embrace a lifestyle that values and protects the environment.",
+    "cover":"/images/pet_packaging_mockup.png",
+    "imageSrc": "/images/pet_packaging_mockup.png",
+    "altImg":"/images/petrichoralt.png",
+    "research": [
+      "The initial idea stemmed from the word petrichor and from there I built a water brand that echoed the and natural essence of this word. Every design choice was intentional, from the water-drop shape of the bottle to its glass material. I chose to let the features of the typeface do most of the talking for the logo. The sparkling water variation was signaled through the sun rays around the word sparkling, meant to convey the effect of sun reflecting off of water."
+     ],
+     "adimg1":"/images/p_email.gif",
+     "adimg2": "/images/Pet_insta.png",
+     "adimg3": "/images/pet_screen.png",
+
+    "img3": "/images/pet_ad.png",
+    "screensImg": "/images/GlassBottle.png",
+    "solution": "Petrichor is a brand that embodies the idea of eco-friendly products as it is continuing the rain cycle by filtering rainwater and making it safe to drink. The name Petrichor refers to the pleasant, earthy scent produced when rain falls on dry soil, symbolizing renewal and freshness. As a brand, Petrichor is dedicated to creating sustainable, environmentally conscious water beverages that not only provide everyday refreshment but also promote a deeper connection with the natural world. In order to enjoy the smell of petrichor, you have to be outside in nature, and that is the feeling I wanted to evoke with this brand. From glass, reusable packaging to ethically sourced ingredients, Petrichor aims to inspire consumers to embrace a lifestyle that values and protects the environment.",
+    "challenges":"One key challenge was the current infeasibility of large-scale rainwater consumption due to purification limitations, requiring the concept to remain speculative. Balancing poetic, nature-driven branding with credibility also required careful control of visual complexity. Additionally, ensuring the minimal logo felt intentional rather than under-designed involved thoughtful typographic refinement and attention to detail.",
+    "impact":"Petrichor’s touchpoints include the logo, packaging, labels, and advertisements. Each touchpoint was crafted to reflect the brand's commitment to sustainability and its connection to nature.The logo features a minimalistic design, letting the Adobe Monarcha typeface do the talking. The typeface appears rhythmic, like rain, and feels even a bit poetic. The packaging is made from glass, a sustainable material that can be reused and recycled while the shape itself resembles a water droplet, reinforcing the brand's connection to water and nature. The labels are designed to be simple, reflecting the purity of the product, while also incorporating elements like the definitions of petrichor."
+
+  },
     {
     "id": "course-connect",
     "title": "Course Connect",
@@ -39,43 +67,6 @@
   },
   
   {
-    "id": "nextstop-ar",
-    "title": "NextStop AR",
-    "href": "/projects/nextstop-ar",
-    "type": "Case Study",
-    "subtitle": "Augmented Reality for Transit Navigation",
-    "tagText": "UX Research | UX Design",
-    "date": "2024",
-    "tags": ["UX Design", "Graphic Design"],
-    "aspect":"aspect-[4/3]",
-    "problem":"Navigating the Massachusetts Bay Transportation Authority (MBTA), also known as the Boston T, can be confusing, especially for tourists unfamiliar with the system. Through observation and secondary research, we identified common pain points such as: unclear signage, complex station layouts, unfamiliar terminology, language barriers, and accessibility challenges. Our primary target users were tourists new to Boston who needed clear directional assistance within T stations.",
-    "hypothesis":"How might we design a mobile app that improves navigation within the Boston T to provide users, primarily tourists, with a more intuitive, accessible, and stress-free navigation experience.",
-    "role":"I led and worked collaboratively with a UX design team to conceptualize and prototype the solution in Figma. I contributed to competitive research, ideation, sketching, interface design, and interaction design. We worked together to evaluate ideas, refine the overall concept, and iterate on prototype fidelity, focusing on accessibility and usability priorities.",
-    "img1": "/images/nextimg1.png",
-    "cover":"/images/nextcoverfull.png",
-    "imageSrc": "/images/NextStopSrcnew.png",
-    "gifs": [
-      "/images/navrec1.gif",
-      "/images/navrec.gif"
-    ],
-    "altImg":"/images/nextalt.png",
-    "diagram": "/images/nextdiagram.png",
-    "research": [
-      "We began by researching existing transit and navigation tools, including ProximiT, MBTA Go, and NaviLens. This helped us identify strengths, weaknesses, and gaps in the current product landscape.",
-      "Due to a short timeline, we gathered primary insights from App Store reviews and Reddit discussions to understand real user frustrations. One gap we noticed was that no existing solution effectively combined real-world navigation with live visual cues inside stations.",
-      "Each team member created five rapid sketches. After brainstorming multiple approaches, we aligned on one of my proposed ideas, an AR-based navigation app that overlays directional arrows within the station environment. ",
-      "Recognizing that augmented reality could be unfamiliar to users, we prioritized onboarding early in the design process to clearly explain how the feature works.",
-      "We iterated from low- to medium-fidelity prototypes, experimenting with color and visual hierarchy. Ultimately, we chose a minimal black-and-white interface with the recognizable MBTA green for emphasis to maintain clarity while aligning with the transit system’s visual identity."
-    ],
-    "img2": "/images/course2.png",
-    "screensImg": "/images/nextscreenimgs.png",
-    "solution": "NextStop AR allows users to hold up their phones and follow AR arrows overlaid onto the real-world station environment, guiding them step-by-step to their train or destination. The solution addressed unclear signage by replacing ambiguity with direct visual arrows, complex layouts by providing real-time directional guidance, language barriers by relying primarily on universal visual cues, and accessibility concerns by considering alternative routing and clear, high-contrast visuals. By merging physical space with digital wayfinding, the app reduced cognitive load and improved clarity for both tourists and regular commuters navigating unfamiliar lines.",
-    "challenges":"Due to a limited timeline, we relied on secondary research rather than conducting in-depth user interviews, which constrained the depth of our insights. Early concepts explored more traditional 2D navigation patterns, but these lacked differentiation from existing solutions and pushed us toward AR. We also iterated extensively on color choices to balance clarity, accessibility, and innovation, while addressing concerns around user safety and distraction in a fast-paced transit environment.",
-    "impact": "The prototype demonstrated how AR could modernize transit navigation and improve accessibility within Boston T stations. By addressing navigation frustrations, the concept showed potential to enhance rider confidence, reduce confusion, and create a more tourist-friendly transit experience.",
-    "takeaways": "This project strengthened my ability to identify gaps in an existing product landscape and propose innovative, emerging-technology solutions. I learned the importance of clear onboarding when introducing unfamiliar technology and how strong visual hierarchy and accessibility decisions can reduce cognitive load in high-stress environments. It also reinforced how emerging tools like AR can solve real usability problems and not just serve as a novelty."
-
-  },
-  {
   "id": "luma",
   "title": "Luma",
   "subtitle": "Designing for Sustainable Consumption & Awareness",
@@ -114,33 +105,41 @@
   "impact": "Luma introduces a more human-centered approach to sustainable consumption by combining visibility, personalization, and motivation. By embedding the experience into the physical home environment and reinforcing it through community engagement and mobile touchpoints, the concept encourages consistent interaction and stronger habit formation. This approach empowers users to feel a greater sense of agency in reducing their environmental impact.",
   "takeaways": "This project reinforced the importance of designing for behavior change, not just information delivery. I learned how integrating products into existing routines, leveraging social motivation through gamification, and offering meaningful personalization can significantly increase engagement. Simplifying complex systems while maintaining flexibility was critical in creating an experience that feels both actionable and empowering."
   },
-  {
-    "id": "petrichor",
-    "title": "Petrichor",
-    "href": "/projects/petrichor",
-    "tagText": "Product design",
+   {
+    "id": "nextstop-ar",
+    "title": "NextStop AR",
+    "href": "/projects/nextstop-ar",
+    "type": "Case Study",
+    "subtitle": "Augmented Reality for Transit Navigation",
+    "tagText": "UX Research | UX Design",
     "date": "2024",
-    "tags": ["Branding & Marketing", "Graphic Design"],
-    "type":"Project",
-    "subtitle":"Beverage Branding & Packaging Design",
+    "tags": ["UX Design", "Graphic Design"],
     "aspect":"aspect-[4/3]",
-    "problem":"This was a project I worked on for my Identity and Brand Design course. Our task was to observe beverages in the world and then build our own brand. I found it interesting how water, something that is a daily necessity, could come in so many different forms with their own individual brand tones and personality. I took inspiration from water brands like Voss, but wanted to create a brand that felt more connected to nature and the environment. My goal was to create a brand that not only provided a refreshing beverage but also inspired consumers to embrace a lifestyle that values and protects the environment.",
-    "cover":"/images/pet_packaging_mockup.png",
-    "imageSrc": "/images/pet_packaging_mockup.png",
-    "altImg":"/images/petrichoralt.png",
-    "research": [
-      "The initial idea stemmed from the word petrichor and from there I built a water brand that echoed the and natural essence of this word. Every design choice was intentional, from the water-drop shape of the bottle to its glass material. I chose to let the features of the typeface do most of the talking for the logo. The sparkling water variation was signaled through the sun rays around the word sparkling, meant to convey the effect of sun reflecting off of water."
-     ],
-     "gifs": [
-      "/images/p_email.gif",
-      "/images/Pet_insta.png",
-      "/images/pet_screen.png"
+    "problem":"Navigating the Massachusetts Bay Transportation Authority (MBTA), also known as the Boston T, can be confusing, especially for tourists unfamiliar with the system. Through observation and secondary research, we identified common pain points such as: unclear signage, complex station layouts, unfamiliar terminology, language barriers, and accessibility challenges. Our primary target users were tourists new to Boston who needed clear directional assistance within T stations.",
+    "hypothesis":"How might we design a mobile app that improves navigation within the Boston T to provide users, primarily tourists, with a more intuitive, accessible, and stress-free navigation experience.",
+    "role":"I led and worked collaboratively with a UX design team to conceptualize and prototype the solution in Figma. I contributed to competitive research, ideation, sketching, interface design, and interaction design. We worked together to evaluate ideas, refine the overall concept, and iterate on prototype fidelity, focusing on accessibility and usability priorities.",
+    "img1": "/images/nextimg1.png",
+    "cover":"/images/nextcoverfull.png",
+    "imageSrc": "/images/NextStopSrcnew.png",
+    "gifs": [
+      "/images/navrec1.gif",
+      "/images/navrec.gif"
     ],
-    "img3": "/images/pet_ad.png",
-    "screensImg": "/images/GlassBottle.png",
-    "solution": "Petrichor is a brand that embodies the idea of eco-friendly products as it is continuing the rain cycle by filtering rainwater and making it safe to drink. The name Petrichor refers to the pleasant, earthy scent produced when rain falls on dry soil, symbolizing renewal and freshness. As a brand, Petrichor is dedicated to creating sustainable, environmentally conscious water beverages that not only provide everyday refreshment but also promote a deeper connection with the natural world. In order to enjoy the smell of petrichor, you have to be outside in nature, and that is the feeling I wanted to evoke with this brand. From glass, reusable packaging to ethically sourced ingredients, Petrichor aims to inspire consumers to embrace a lifestyle that values and protects the environment.",
-    "challenges":"One key challenge was the current infeasibility of large-scale rainwater consumption due to purification limitations, requiring the concept to remain speculative. Balancing poetic, nature-driven branding with credibility also required careful control of visual complexity. Additionally, ensuring the minimal logo felt intentional rather than under-designed involved thoughtful typographic refinement and attention to detail.",
-    "impact":"Petrichor’s touchpoints include the logo, packaging, labels, and advertisements. Each touchpoint was crafted to reflect the brand's commitment to sustainability and its connection to nature.The logo features a minimalistic design, letting the Adobe Monarcha typeface do the talking. The typeface appears rhythmic, like rain, and feels even a bit poetic. The packaging is made from glass, a sustainable material that can be reused and recycled while the shape itself resembles a water droplet, reinforcing the brand's connection to water and nature. The labels are designed to be simple, reflecting the purity of the product, while also incorporating elements like the definitions of petrichor."
+    "altImg":"/images/nextalt.png",
+    "diagram": "/images/nextdiagram.png",
+    "research": [
+      "We began by researching existing transit and navigation tools, including ProximiT, MBTA Go, and NaviLens. This helped us identify strengths, weaknesses, and gaps in the current product landscape.",
+      "Due to a short timeline, we gathered primary insights from App Store reviews and Reddit discussions to understand real user frustrations. One gap we noticed was that no existing solution effectively combined real-world navigation with live visual cues inside stations.",
+      "Each team member created five rapid sketches. After brainstorming multiple approaches, we aligned on one of my proposed ideas, an AR-based navigation app that overlays directional arrows within the station environment. ",
+      "Recognizing that augmented reality could be unfamiliar to users, we prioritized onboarding early in the design process to clearly explain how the feature works.",
+      "We iterated from low- to medium-fidelity prototypes, experimenting with color and visual hierarchy. Ultimately, we chose a minimal black-and-white interface with the recognizable MBTA green for emphasis to maintain clarity while aligning with the transit system’s visual identity."
+    ],
+    "img2": "/images/course2.png",
+    "screensImg": "/images/nextscreenimgs.png",
+    "solution": "NextStop AR allows users to hold up their phones and follow AR arrows overlaid onto the real-world station environment, guiding them step-by-step to their train or destination. The solution addressed unclear signage by replacing ambiguity with direct visual arrows, complex layouts by providing real-time directional guidance, language barriers by relying primarily on universal visual cues, and accessibility concerns by considering alternative routing and clear, high-contrast visuals. By merging physical space with digital wayfinding, the app reduced cognitive load and improved clarity for both tourists and regular commuters navigating unfamiliar lines.",
+    "challenges":"Due to a limited timeline, we relied on secondary research rather than conducting in-depth user interviews, which constrained the depth of our insights. Early concepts explored more traditional 2D navigation patterns, but these lacked differentiation from existing solutions and pushed us toward AR. We also iterated extensively on color choices to balance clarity, accessibility, and innovation, while addressing concerns around user safety and distraction in a fast-paced transit environment.",
+    "impact": "The prototype demonstrated how AR could modernize transit navigation and improve accessibility within Boston T stations. By addressing navigation frustrations, the concept showed potential to enhance rider confidence, reduce confusion, and create a more tourist-friendly transit experience.",
+    "takeaways": "This project strengthened my ability to identify gaps in an existing product landscape and propose innovative, emerging-technology solutions. I learned the importance of clear onboarding when introducing unfamiliar technology and how strong visual hierarchy and accessibility decisions can reduce cognitive load in high-stress environments. It also reinforced how emerging tools like AR can solve real usability problems and not just serve as a novelty."
 
   }
 ]

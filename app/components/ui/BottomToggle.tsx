@@ -38,7 +38,7 @@ export default function BottomToggle({ active, onChange }: BottomToggleProps) {
             color: "#ffffff",
             background:
               active === view
-                ? "rgba(0, 0, 0, 0.60)"
+                ? "rgba(0, 0, 0, 0.65)"
                 : "rgba(0, 0, 0, 0.25)",
             backdropFilter: "blur(8px)",
             WebkitBackdropFilter: "blur(8px)",

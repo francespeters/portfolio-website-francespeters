@@ -4,25 +4,13 @@
     "src": "/images/GlassBottle.png",
     "title": "Petrichor Packaging Design",
     "process": "Designed packaging for Petrichor, focusing on sustainable materials and a minimalist aesthetic. Used a combination of Illustrator and Photoshop for photo editing and mockup creation.",
-    "tags": ["Packaging Design"]
-  },
-  
-  {
-    "id": "3",
-    "src": "/images/pet_ad.png",
-    "title": "Petrichor Advertisement Poster",
-    "process": "Created a visually engaging poster for Petrichor using a combination of Illustrator and Photoshop.",
-    "tags": ["Branding & Marketing"],
-    "maxHeight": "700"
+    "tags": ["Packaging Design"],
+        "maxHeight": "700",
+        "align": "right"
 
   },
-  {
-    "id": "4",
-    "src": "/images/pet_screen.png",
-    "title": "Petrichor Ecommerce Landing Page",
-    "process": "Designed the landing page for Petrichor's ecommerce touchpoint using Figma and Photoshop.",
-    "tags": ["UX & Marketing"]
-  },
+  
+  
   {
     "id": "5",
     "src": "/images/Pet_insta.png",
@@ -31,12 +19,38 @@
     "tags": ["Social Media Marketing"]
   },
   {
+    "id": "3",
+    "src": "/images/pet_ad.png",
+    "title": "Petrichor Advertisement Poster",
+    "process": "Created a visually engaging poster for Petrichor using a combination of Illustrator and Photoshop.",
+    "tags": ["Branding & Marketing"],
+    "maxHeight": "725",
+            "align": "center"
+
+
+  },
+  {
     "id": "8",
     "src": "/images/p_email.gif",
     "title": "Petrichor Email Campaign",
     "process": "Designed an marketing email for Petrichor using Figma and Photoshop.",
-    "tags": ["Branding & Marketing"],
-    "maxHeight": "700"
+    "tags": ["Branding & Marketing"]
+  },
+  
+  {
+    "id": "4",
+    "src": "/images/pet_screen.png",
+    "title": "Petrichor Ecommerce Landing Page",
+    "process": "Designed the landing page for Petrichor's ecommerce touchpoint using Figma and Photoshop.",
+    "tags": ["UX & Marketing"]
+  },
+  {
+    "id": "6",
+    "src": "/images/Luma_video.mp4",
+    "title": "Luma Advertising Video",
+    "process": "Explored animation in Canva with fluid transitions that matched the brand's modern personality.",
+    "tags": ["Animation"],
+    "type": "video" 
 
   },
   {
@@ -45,17 +59,9 @@
     "title": "Luma Advertising Poster",
     "process": "Designed an adversiting poster for Luma, a household energy consumption data-tracker built for sustainable living. The illustration was created and edited using Figma.",
     "tags": ["Branding & Marketing"],
-    "maxHeight": "700"
+    "maxHeight": "700",
+            "align": "center"
 
-  },
-  
-  {
-    "id": "6",
-    "src": "/images/Luma_video.mp4",
-    "title": "Luma Advertising Video",
-    "process": "Explored animation in Canva with fluid transitions that matched the brand's modern personality.",
-    "tags": ["Animation"],
-    "type": "video" 
 
   }
 ]
